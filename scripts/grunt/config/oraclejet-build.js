@@ -33,9 +33,20 @@ module.exports = function (grunt) {
  * If a fileList value is specified, it completely replaces the default fileList value defined by JET
  * Example: {cwd: 'app', src: ['**', '!test.js'], dest: 'staging',  rename: function (dest, file) {return renamed path}}
  */
-    // copyCustomLibsToStaging: {
-    //   fileList: []
-    // },
+     copyCustomLibsToStaging: {
+       fileList: [
+         {
+           cwd: 'node_modules/vue',
+           src: ['**'], 
+           dest: 'web/js/libs/vue'
+         },
+         {
+           cwd: 'node_modules/vue-router',
+           src: ['**'], 
+           dest: 'web/js/libs/vue-router'
+         }
+       ]
+     },
 
 /**
  * # copySrcToStaging

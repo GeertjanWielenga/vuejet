@@ -7,7 +7,9 @@
     "homepage": "http://www.oraclejet.org"
   },
   "dependencies": {
-    "oraclejet": "~3.1.0"
+    "oraclejet": "~3.1.0",
+    "vue":"latest",    
+    "vue-router":"latest"    
   },
   "devDependencies": {
     "grunt": "^1.0.1",
