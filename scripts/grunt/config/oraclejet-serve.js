@@ -26,14 +26,15 @@ module.exports = function () {
  * once the custom tasks completed, tooling will reload the browser if liverealod is set to true, then resume watching
  */
     // // Sub task watch default options
-    // watch: {
-    //   sourceFiles:
-    //   {
-    //     files: [],
-    //     options: {
-    //       livereload: true
-    //     }
-    //   },
+     watch: {
+       sourceFiles:
+       {
+         files: ['src/js/vue-components/**/*.vue'],
+         options: {
+           livereload: true
+         }
+       }
+     },
 
     //   sass: {
     //     files: [],
