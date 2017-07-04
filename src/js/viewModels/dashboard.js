@@ -6,7 +6,8 @@
  * Your dashboard ViewModel code goes here
  */
 define(['ojs/ojcore', 'knockout', 'jquery', 'Vue', 
-  'vue!vue-components/my-header-component'],
+  'vue!vue-components/my-header-component',
+  'vue!vue-components/my-navigation-component'],
  function(oj, ko, $, Vue) {
   
     function DashboardViewModel() {
@@ -41,6 +42,9 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'Vue',
       self.handleAttached = function(info) {
 		new Vue({
 		  el: "#header"
+		});
+		new Vue({
+		  el: "#navigation"
 		});
       };
 
