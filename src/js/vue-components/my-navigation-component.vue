@@ -1,9 +1,18 @@
 <template>
-    <div>
-        <ul v-for='module in modules'>
-            <li>
-              <router-link :to='module.url'>{{module.title}}</router-link>
-            </li>
+    <div id="navigationlist" class="oj-web-applayout-navbar oj-sm-only-hide oj-md-condense oj-md-justify-content-flex-end">
+        <ul>
+            <router-link
+                active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                tag='li'
+                to='/'>
+                <a>Dashboard</a>
+            </router-link>
+            <router-link
+                active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                tag='li'
+                to='/customers'>
+                <a>Customers</a>
+            </router-link>
         </ul>
         <router-view></router-view>
     </div>
@@ -19,6 +28,12 @@
       Vue.component('my-navigation-component', {
           template: template,
           router: router,
+          mounted() {
+            $('#navigationlist').ojNavigationList({
+              edge: 'top',
+              navigationLevel: 'application'
+            });
+          },
           data: function() {
             return {
                 modules: [
