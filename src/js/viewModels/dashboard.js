@@ -5,8 +5,9 @@
 /*
  * Your dashboard ViewModel code goes here
  */
-define(['ojs/ojcore', 'knockout', 'jquery'],
- function(oj, ko, $) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'Vue', 
+  'vue!vue-components/my-header-component'],
+ function(oj, ko, $, Vue) {
   
     function DashboardViewModel() {
       var self = this;
@@ -38,7 +39,9 @@ define(['ojs/ojcore', 'knockout', 'jquery'],
        * @param {boolean} info.fromCache - A boolean indicating whether the module was retrieved from cache.
        */
       self.handleAttached = function(info) {
-        // Implement if needed
+		new Vue({
+		  el: "#header"
+		});
       };
 
 

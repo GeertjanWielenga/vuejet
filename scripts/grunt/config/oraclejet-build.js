@@ -44,6 +44,11 @@ module.exports = function (grunt) {
            cwd: 'node_modules/vue-router',
            src: ['**'], 
            dest: 'web/js/libs/vue-router'
+         },
+         {
+           cwd: 'node_modules/require-vuejs',
+           src: ['**'], 
+           dest: 'web/js/libs/require-vuejs'
          }
        ]
      },

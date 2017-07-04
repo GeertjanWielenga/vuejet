@@ -31,7 +31,8 @@ requirejs.config(
     'customElements': 'libs/webcomponents/CustomElements',
     'proj4': 'libs/proj4js/dist/proj4-src',
     'css': 'libs/require-css/css',
-    'vue': 'libs/vue/dist/vue',
+    'Vue': 'libs/vue/dist/vue',
+	'vue': 'libs/require-vuejs/dist/require-vuejs',
 	'vue_router': 'libs/vue-router/dist/vue-router'
   }
   //endinjector
@@ -42,7 +43,15 @@ requirejs.config(
     'jquery':
     {
       exports: ['jQuery', '$']
-    }
+    },
+	'Vue': 
+	{
+	  exports: 'Vue'
+	},
+	'vue_router': 
+    {
+	  'exports': 'VueRouter'
+	}
   }
 }
 );
