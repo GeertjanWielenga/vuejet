@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h3>{{name}} Content Area</h3>
-        <hr>
+        <b>{{name}}</b>
     </div>
 </template>
 

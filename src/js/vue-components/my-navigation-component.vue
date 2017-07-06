@@ -1,21 +1,28 @@
 <template>
-    <div id="navigationlist" class="oj-web-applayout-navbar oj-sm-only-hide oj-md-condense oj-md-justify-content-flex-end">
-        <ul>
-            <router-link
-                active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                tag='li'
-                to='/'>
-                <a>Dashboard</a>
-            </router-link>
-            <router-link
-                active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                tag='li'
-                to='/customers'>
-                <a>Customers</a>
-            </router-link>
-        </ul>
-        <hr>
-        <router-view></router-view>
+    <div>
+        <div class='oj-web-applayout-header'>
+            <my-header-component
+                class='oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center'
+                name='App Name'>
+            </my-header-component>
+            <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
+                <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
+                    <router-link
+                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                        tag='li'
+                        to='/'>
+                        <a>Dashboard</a>
+                    </router-link>
+                    <router-link
+                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                        tag='li'
+                        to='/customers'>
+                        <a>Customers</a>
+                    </router-link>
+                </ul>
+            </div>
+        </div>
+        <router-view class='oj-web-applayout-max-width oj-web-applayout-content'></router-view>
     </div>
 </template>
 
