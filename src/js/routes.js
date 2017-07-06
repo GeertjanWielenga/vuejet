@@ -1,8 +1,9 @@
 define([
   './viewModels/dashboard_1',
   './viewModels/incidents_1',
-  './viewModels/customers_1'
-  ], function(dashboard, incidents, customers){
+  './viewModels/customers_1',
+  './viewModels/about_1'
+  ], function(dashboard, incidents, customers, about){
     return [
       {
         path:'/',
@@ -15,6 +16,10 @@ define([
       {
         path:'/customers',
         component: customers
+      },
+      {
+        path:'/about',
+        component: about
       }
-    ]
+    ];
   });

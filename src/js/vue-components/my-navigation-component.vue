@@ -25,6 +25,12 @@
                         to='/customers'>
                         <a>Customers</a>
                     </router-link>
+                    <router-link
+                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                        tag='li'
+                        to='/about'>
+                        <a>About</a>
+                    </router-link>
                 </ul>
             </div>
         </div>
