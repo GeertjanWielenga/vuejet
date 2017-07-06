@@ -14,6 +14,7 @@
                 <a>Customers</a>
             </router-link>
         </ul>
+        <hr>
         <router-view></router-view>
     </div>
 </template>
