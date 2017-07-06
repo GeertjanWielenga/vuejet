@@ -31,6 +31,8 @@ module.exports = function () {
        {
          files: [
 			'src/js/vue-components/**/*.vue',
+			'src/js/views/**/*.html',
+			'src/js/viewModels/**/*.js',
 		    'src/js/routes.js',
 		    'src/js/main.js',
 		    'src/index.html'],
