@@ -29,7 +29,11 @@ module.exports = function () {
      watch: {
        sourceFiles:
        {
-         files: ['src/js/vue-components/**/*.vue'],
+         files: [
+			'src/js/vue-components/**/*.vue',
+		    'src/js/routes.js',
+		    'src/js/main.js',
+		    'src/index.html'],
          options: {
            livereload: true
          }
