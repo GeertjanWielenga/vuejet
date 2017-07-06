@@ -16,6 +16,12 @@
                     <router-link
                         active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
                         tag='li'
+                        to='/incidents'>
+                        <a>Incidents</a>
+                    </router-link>
+                    <router-link
+                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
+                        tag='li'
                         to='/customers'>
                         <a>Customers</a>
                     </router-link>
@@ -41,19 +47,6 @@
               edge: 'top',
               navigationLevel: 'application'
             });
-          },
-          data: function() {
-            return {
-                modules: [
-                  {
-                  'url': '/',
-                  'title': 'Dashboard'
-                },{
-                  'url': '/customers',
-                  'title': 'Customers'
-                }
-              ]
-            };
           }
       });
     });
