@@ -17,7 +17,7 @@ requirejs.config(
   paths:
   //injector:mainReleasePaths
   {
-    'knockout': 'libs/knockout/knockout-3.4.0.debug',
+//    'knockout': 'libs/knockout/knockout-3.4.0.debug',
     'jquery': 'libs/jquery/jquery-3.1.1',
     'jqueryui-amd': 'libs/jquery/jqueryui-amd-1.12.0',
     'promise': 'libs/es6-promise/es6-promise',
@@ -62,22 +62,27 @@ requirejs.config(
  * by the modules themselves), we are listing them explicitly to get the references to the 'oj' and 'ko'
  * objects in the callback
  */
-require(['ojs/ojcore', 'knockout', 'appController', 'ojs/ojknockout',
-  'ojs/ojmodule', 'ojs/ojrouter', 'ojs/ojnavigationlist', 'ojs/ojbutton', 'ojs/ojtoolbar'],
-  function (oj, ko, app) { // this callback gets executed when all required modules are loaded
+require(['ojs/ojcore', 'Vue', 
+  'vue!vue-components/my-header-component',
+  'vue!vue-components/my-navigation-component',
+  'ojs/ojnavigationlist', 'ojs/ojbutton', 'ojs/ojtoolbar'],
+  function (oj, Vue) { // this callback gets executed when all required modules are loaded
 
     $(function() {
 
       function init() {
-        oj.Router.sync().then(
-          function () {
-            // Bind your ViewModel for the content of the whole page body.
-            ko.applyBindings(app, document.getElementById('globalBody'));
-          },
-          function (error) {
-            oj.Logger.error('Error in root start: ' + error.message);
-          }
-        );
+		new Vue({
+		  el: "#main"
+		});
+//        oj.Router.sync().then(
+//          function () {
+//            // Bind your ViewModel for the content of the whole page body.
+//            ko.applyBindings(app, document.getElementById('globalBody'));
+//          },
+//          function (error) {
+//            oj.Logger.error('Error in root start: ' + error.message);
+//          }
+//        );
       }
 
       // If running in a hybrid (e.g. Cordova) environment, we need to wait for the deviceready 
