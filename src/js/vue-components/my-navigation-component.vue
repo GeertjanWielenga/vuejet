@@ -7,25 +7,25 @@
             </my-header-component>
             <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                    <router-link
+                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'
                         active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
                         tag='li'
                         to='/'>
                         <a>Dashboard</a>
                     </router-link>
-                    <router-link
+                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'
                         active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
                         tag='li'
                         to='/incidents'>
                         <a>Incidents</a>
                     </router-link>
-                    <router-link
+                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'
                         active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
                         tag='li'
                         to='/customers'>
                         <a>Customers</a>
                     </router-link>
-                    <router-link
+                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'
                         active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
                         tag='li'
                         to='/about'>
