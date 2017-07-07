@@ -39,21 +39,24 @@
 </template>
 
 <script>
-    define(['Vue', 'vue_router', 'routes'], function (Vue, VueRouter, AppRoutes) {
-      Vue.use(VueRouter);
-      var router = new VueRouter({
-        mode: 'hash',
-        routes: AppRoutes
-      });
-      Vue.component('my-navigation-component', {
-          template: template,
-          router: router,
-          mounted() {
-            $('#navigationlist').ojNavigationList({
-              edge: 'top',
-              navigationLevel: 'application'
-            });
-          }
-      });
-    });
+    define(['Vue', 'vue_router', 'routes',
+            'vue!vue-components/my-header-component'
+           ],
+        function (Vue, VueRouter, AppRoutes) {
+              Vue.use(VueRouter);
+              var router = new VueRouter({
+                mode: 'hash',
+                routes: AppRoutes
+              });
+              Vue.component('my-layout-component', {
+                  template: template,
+                  router: router,
+                  mounted() {
+                    $('#navigationlist').ojNavigationList({
+                      edge: 'top',
+                      navigationLevel: 'application'
+                    });
+                  }
+              });
+        });
 </script>
