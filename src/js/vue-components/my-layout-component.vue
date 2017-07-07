@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='oj-web-applayout-page'>
         <div class='oj-web-applayout-header'>
             <my-header-component
                 class='oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center'
@@ -34,13 +34,20 @@
                 </ul>
             </div>
         </div>
-        <router-view class='oj-web-applayout-max-width oj-web-applayout-content'></router-view>
+        <div class="oj-web-applayout-max-width oj-web-applayout-content">
+        <router-view></router-view>
+        </div>
+        <my-footer-component
+            class='oj-web-applayout-footer'>
+        </my-footer-component>
     </div>
 </template>
 
 <script>
     define(['Vue', 'vue_router', 'routes',
-            'vue!vue-components/my-header-component'
+            'ojs/ojnavigationlist',
+            'vue!vue-components/my-header-component',
+            'vue!vue-components/my-footer-component'
            ],
         function (Vue, VueRouter, AppRoutes) {
               Vue.use(VueRouter);

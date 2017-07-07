@@ -63,25 +63,15 @@ requirejs.config(
  * objects in the callback
  */
 require(['ojs/ojcore', 'Vue', 
-  'vue!vue-components/my-layout-component',
-  'ojs/ojnavigationlist', 'ojs/ojbutton', 'ojs/ojtoolbar'],
+  'vue!vue-components/my-layout-component'],
   function (oj, Vue) { // this callback gets executed when all required modules are loaded
 
     $(function() {
 
       function init() {
 		new Vue({
-		  el: "#main"
+		  el: "#pageContent"
 		});
-//        oj.Router.sync().then(
-//          function () {
-//            // Bind your ViewModel for the content of the whole page body.
-//            ko.applyBindings(app, document.getElementById('globalBody'));
-//          },
-//          function (error) {
-//            oj.Logger.error('Error in root start: ' + error.message);
-//          }
-//        );
       }
 
       // If running in a hybrid (e.g. Cordova) environment, we need to wait for the deviceready 
