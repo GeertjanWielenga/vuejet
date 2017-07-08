@@ -7,32 +7,11 @@
             </my-header-component>
             <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
-                        <router-link to="/"
+                    <li v-for='link in links'>
+                        <router-link :to='link.url'
                            class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24"></span>
-                            <span class="oj-navigationlist-item-label">Dashboard</span>
-                        </router-link>
-                    </li>
-                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
-                        <router-link to="/incidents"
-                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
-                            <span class="oj-navigationlist-item-label">Incidents</span>
-                        </router-link>
-                    </li>
-                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
-                        <router-link to="/customers"
-                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
-                            <span class="oj-navigationlist-item-label">Customers</span>
-                        </router-link>
-                    </li>
-                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
-                        <router-link to="/about"
-                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
-                            <span class="oj-navigationlist-item-label">About</span>
+                            <span :class='link.icon'></span>
+                            <span class="oj-navigationlist-item-label">{{link.title}}</span>
                         </router-link>
                     </li>
                 </ul>
@@ -67,6 +46,29 @@
                       edge: 'top',
                       navigationLevel: 'application'
                     });
+                  },
+                  data: function() {
+                    return {
+                        links: [
+                          {
+                          'url': '/',
+                          'title': 'Dashboard',
+                          'icon': 'demo-chart-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
+                        },{
+                          'url': '/incidents',
+                          'title': 'Incidents',
+                          'icon': 'demo-fire-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
+                        },{
+                          'url': '/customers',
+                          'title': 'Customers',
+                          'icon': 'demo-people-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
+                        },{
+                          'url': '/about',
+                          'title': 'About',
+                          'icon': 'demo-info-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
+                        }
+                      ]
+                    };
                   }
               });
         });
