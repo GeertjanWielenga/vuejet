@@ -7,30 +7,34 @@
             </my-header-component>
             <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'
-                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                        tag='li'
-                        to='/'>
-                        <a>Dashboard</a>
-                    </router-link>
-                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'
-                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                        tag='li'
-                        to='/incidents'>
-                        <a>Incidents</a>
-                    </router-link>
-                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'
-                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                        tag='li'
-                        to='/customers'>
-                        <a>Customers</a>
-                    </router-link>
-                    <router-link class='oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'
-                        active-class='oj-navigationlist-item-element oj-navigationlist-item oj-selected'
-                        tag='li'
-                        to='/about'>
-                        <a>About</a>
-                    </router-link>
+                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
+                        <router-link to="/"
+                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24"></span>
+                            <span class="oj-navigationlist-item-label">Dashboard</span>
+                        </router-link>
+                    </li>
+                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
+                        <router-link to="/incidents"
+                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
+                            <span class="oj-navigationlist-item-label">Incidents</span>
+                        </router-link>
+                    </li>
+                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
+                        <router-link to="/customers"
+                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
+                            <span class="oj-navigationlist-item-label">Customers</span>
+                        </router-link>
+                    </li>
+                    <li class="oj-navigationlist-item-element oj-navigationlist-item">
+                        <router-link to="/about"
+                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                            <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"></span>
+                            <span class="oj-navigationlist-item-label">About</span>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
         </div>
