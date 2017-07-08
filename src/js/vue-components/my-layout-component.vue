@@ -27,12 +27,12 @@
 </template>
 
 <script>
-    define(['Vue', 'vue_router', 'routes',
+    define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
             'ojs/ojnavigationlist',
             'vue!vue-components/my-header-component',
             'vue!vue-components/my-footer-component'
            ],
-        function (Vue, VueRouter, AppRoutes) {
+        function (Vue, VueRouter, AppRoutes, NavDataFactory) {
               Vue.use(VueRouter);
               var router = new VueRouter({
                 mode: 'hash',
@@ -49,25 +49,7 @@
                   },
                   data: function() {
                     return {
-                        links: [
-                          {
-                          'url': '/',
-                          'title': 'Dashboard',
-                          'icon': 'demo-chart-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
-                        },{
-                          'url': '/incidents',
-                          'title': 'Incidents',
-                          'icon': 'demo-fire-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
-                        },{
-                          'url': '/customers',
-                          'title': 'Customers',
-                          'icon': 'demo-people-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
-                        },{
-                          'url': '/about',
-                          'title': 'About',
-                          'icon': 'demo-info-icon-24 oj-navigationlist-item-icon demo-icon-font-24'
-                        }
-                      ]
+                        links: NavDataFactory.createNavDataFactory()
                     };
                   }
               });

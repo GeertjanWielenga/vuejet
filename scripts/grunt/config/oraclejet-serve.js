@@ -34,6 +34,7 @@ module.exports = function () {
 			'src/js/views/**/*.html',
 			'src/js/viewModels/**/*.js',
 		    'src/js/routes.js',
+		    'src/js/NavDataFactory.js',
 		    'src/js/main.js',
 		    'src/index.html'],
          options: {
