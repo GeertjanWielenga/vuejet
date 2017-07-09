@@ -2,20 +2,9 @@
     <div class='oj-web-applayout-page'>
         <div class='oj-web-applayout-header'>
             <my-header-component
-                class='oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center'
+                class='oj-web-applayout-max-width oj-sm-align-items-center'
                 name='App Name'>
             </my-header-component>
-            <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
-                <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                    <li v-for='link in links'>
-                    <router-link :to='link.url'
-                        class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                        <span :class='link.iconClass'></span>
-                        <span>{{link.name}}</span>
-                    </router-link>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="oj-web-applayout-max-width oj-web-applayout-content">
             <router-view></router-view>
