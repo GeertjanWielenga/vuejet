@@ -2,13 +2,13 @@
     <div>
         <div id="navDrawer" class="oj-contrast-marker oj-web-applayout-offcanvas oj-offcanvas-start">
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                    <li v-for='link in links'>
+                <a v-for='link in links'>
                     <router-link :to='link.url'
-                        class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                        class="oj-contrast-background oj-navigationlist-focused-element oj-navigationlist-item-content">
                         <span :class='link.iconClass'></span>
                         <span class="oj-navigationlist-item-label">{{link.name}}</span>
                     </router-link>
-                    </li>
+                </a>
             </ul>
         </div>
     </div>
