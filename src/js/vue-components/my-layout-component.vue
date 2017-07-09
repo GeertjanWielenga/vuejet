@@ -16,12 +16,12 @@
 </template>
 
 <script>
-    define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
+    define(['Vue', 'vue_router', 'routes',
             'ojs/ojnavigationlist',
             'vue!vue-components/my-header-component',
             'vue!vue-components/my-footer-component'
            ],
-        function (Vue, VueRouter, AppRoutes, NavDataFactory) {
+        function (Vue, VueRouter, AppRoutes) {
               Vue.use(VueRouter);
               var router = new VueRouter({
                 mode: 'hash',
