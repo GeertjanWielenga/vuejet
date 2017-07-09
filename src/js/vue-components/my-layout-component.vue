@@ -8,17 +8,17 @@
             <div id="navigationlist" class='oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
                     <li v-for='link in links'>
-                        <router-link :to='link.url'
-                           class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                            <span :class='link.icon'></span>
-                            <span class="oj-navigationlist-item-label">{{link.name}}</span>
-                        </router-link>
+                    <router-link :to='link.url'
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content">
+                        <span :class='link.icon'></span>
+                        <span class="oj-navigationlist-item-label">{{link.name}}</span>
+                    </router-link>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="oj-web-applayout-max-width oj-web-applayout-content">
-        <router-view></router-view>
+            <router-view></router-view>
         </div>
         <my-footer-component
             class='oj-web-applayout-footer'>
