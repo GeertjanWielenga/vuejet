@@ -1,11 +1,9 @@
 <template>
     <div class='oj-web-applayout-page'>
-        <div class='oj-web-applayout-header'>
-            <my-header-component
-                class='oj-web-applayout-max-width oj-sm-align-items-center'
-                name='App Name'>
-            </my-header-component>
-        </div>
+        <my-header-component
+            class='oj-web-applayout-header'
+            name='App Name'>
+        </my-header-component>
         <div class="oj-web-applayout-max-width oj-web-applayout-content">
             <router-view></router-view>
         </div>
@@ -16,20 +14,20 @@
 </template>
 
 <script>
-    define(['Vue', 'vue_router', 'routes',
-            'ojs/ojnavigationlist',
-            'vue!vue-components/my-header-component',
-            'vue!vue-components/my-footer-component'
-           ],
-        function (Vue, VueRouter, AppRoutes) {
-              Vue.use(VueRouter);
-              var router = new VueRouter({
-                mode: 'hash',
-                routes: AppRoutes
-              });
-              Vue.component('my-layout-component', {
-                  template: template,
-                  router: router
-              });
-        });
+	define(['Vue', 'vue_router', 'routes',
+	  'ojs/ojnavigationlist',
+	  'vue!vue-components/my-header-component',
+	  'vue!vue-components/my-footer-component'
+	],
+			function (Vue, VueRouter, AppRoutes) {
+			  Vue.use(VueRouter);
+			  var router = new VueRouter({
+				mode: 'hash',
+				routes: AppRoutes
+			  });
+			  Vue.component('my-layout-component', {
+				template: template,
+				router: router
+			  });
+			});
 </script>

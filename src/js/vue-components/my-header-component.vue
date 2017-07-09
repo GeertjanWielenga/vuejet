@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span class="oj-flex-bar">
+        <span class="oj-flex-bar oj-web-applayout-max-width oj-sm-align-items-center">
             <div class="oj-flex-bar-start oj-md-hide">
                 <button id="drawerToggleButton" class="oj-button-lg"></button>
             </div>
@@ -18,7 +18,7 @@
                 </ul>
             </div>
         </span>
-        <span class="oj-flex-bar">
+        <span class="oj-flex-bar oj-web-applayout-max-width oj-sm-align-items-center">
             <div id="navigationlist" class='oj-flex-bar-end oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
                     <li v-for='link in links'>
@@ -35,52 +35,52 @@
 </template>
 
 <script>
-    define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
-        'ojs/ojoffcanvas',
-        'ojs/ojbutton', 'ojs/ojmenu', 'ojs/ojtoolbar',
-        'ojs/ojarraytabledatasource',
-        'ojs/ojcollectiontabledatasource'],
-    function (Vue, VueRouter, AppRoutes, NavDataFactory) {
-      Vue.use(VueRouter);
-      var router = new VueRouter({
-        mode: 'hash',
-        routes: AppRoutes
-      });
-      Vue.component('my-header-component', {
-        template: template,
-        router: router,
-        props: ['name'],
-        data: function() {
-          return {
-              links: NavDataFactory.createNavDataFactory()
-          };
-        },
-        mounted() {
-            $('#navigationlist').ojNavigationList({
-                edge: 'top',
-                navigationLevel: 'application'
-            });
-            $('#userMenu').ojButton({
-                menu: '#menu1',
-                label: "john.hancock@oracle.com",
-                chroming: 'half'
-            });
-            $('#drawerToggleButton').ojButton({
-                label: 'Application Navigation',
-                chroming: 'half',
-                display: 'icons',
-                icons: {start: 'oj-web-applayout-offcanvas-icon'}
-            });
-            $("#drawerToggleButton").click(function(){
-               return oj.OffcanvasUtils.toggle({
-                displayMode: 'push',
-                selector: '#navDrawer',
-                content: '#pageContent'
-               });
-            });
-            $('#menu1').ojMenu({
-            });
-        }
-      });
-    });
+	define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
+	  'ojs/ojoffcanvas',
+	  'ojs/ojbutton', 'ojs/ojmenu', 'ojs/ojtoolbar',
+	  'ojs/ojarraytabledatasource',
+	  'ojs/ojcollectiontabledatasource'],
+			function (Vue, VueRouter, AppRoutes, NavDataFactory) {
+			  Vue.use(VueRouter);
+			  var router = new VueRouter({
+				mode: 'hash',
+				routes: AppRoutes
+			  });
+			  Vue.component('my-header-component', {
+				template: template,
+				router: router,
+				props: ['name'],
+				data: function () {
+				  return {
+					links: NavDataFactory.createNavDataFactory()
+				  };
+				},
+				mounted() {
+				  $('#navigationlist').ojNavigationList({
+					edge: 'top',
+					navigationLevel: 'application'
+				  });
+				  $('#userMenu').ojButton({
+					menu: '#menu1',
+					label: "john.hancock@oracle.com",
+					chroming: 'half'
+				  });
+				  $('#drawerToggleButton').ojButton({
+					label: 'Application Navigation',
+					chroming: 'half',
+					display: 'icons',
+					icons: {start: 'oj-web-applayout-offcanvas-icon'}
+				  });
+				  $("#drawerToggleButton").click(function () {
+					return oj.OffcanvasUtils.toggle({
+					  displayMode: 'push',
+					  selector: '#navDrawer',
+					  content: '#pageContent'
+					});
+				  });
+				  $('#menu1').ojMenu({
+				  });
+				}
+			  });
+			});
 </script>
