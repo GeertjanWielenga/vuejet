@@ -1,7 +1,5 @@
 <template>
     <div>
-        <div id="navDrawer" class="oj-contrast-marker oj-web-applayout-offcanvas oj-offcanvas-start">
-        </div>
         <div class="oj-flex-bar-start oj-md-hide">
             <button id="drawerToggleButton" class="oj-button-lg"></button>
         </div>
@@ -22,11 +20,11 @@
 </template>
 
 <script>
-    define(['Vue', 'NavDataFactory', 'ojs/ojoffcanvas',
+    define(['Vue', 'ojs/ojoffcanvas',
         'ojs/ojbutton', 'ojs/ojmenu', 'ojs/ojtoolbar',
         'ojs/ojarraytabledatasource',
         'ojs/ojcollectiontabledatasource'],
-    function (Vue, NavDataFactory) {
+    function (Vue) {
       Vue.component('my-header-component', {
         template: template,
         props: ['name'],
@@ -50,12 +48,6 @@
                });
             });
             $('#menu1').ojMenu({
-            });
-            $('#navDrawer').ojNavigationList({
-                navigationLevel: 'application',
-                item: {template: 'navTemplate'},
-                data: new oj.ArrayTableDataSource(NavDataFactory.createNavDataFactory(), {idAttribute: 'id'}),
-                edge: 'start'
             });
         }
       });

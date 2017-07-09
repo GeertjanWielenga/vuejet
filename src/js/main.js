@@ -63,15 +63,20 @@ requirejs.config(
  * objects in the callback
  */
 require(['ojs/ojcore', 'Vue', 
-  'vue!vue-components/my-layout-component'],
+  'vue!vue-components/my-navdrawer-component',
+  'vue!vue-components/my-layout-component',
+],
   function (oj, Vue) { // this callback gets executed when all required modules are loaded
 
     $(function() {
 
       function init() {
 		new Vue({
+		  el: "#pageDrawer",
+        });
+		new Vue({
 		  el: "#pageContent"
-		});
+        });
       }
 
       // If running in a hybrid (e.g. Cordova) environment, we need to wait for the deviceready 
