@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <div id="navDrawer" class="oj-contrast-marker oj-web-applayout-offcanvas oj-offcanvas-start">
+    <div class="oj-contrast-marker">
+        <div id="navDrawer" class="oj-web-applayout-offcanvas oj-offcanvas-start">
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                <a v-for='link in links'>
-                    <router-link :to='link.url'
-                        class="oj-contrast-background oj-navigationlist-focused-element oj-navigationlist-item-content">
+                <li v-for='link in links'>
+                    <router-link :to='link.url' tag="a"
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content">
                         <span :class='link.iconClass'></span>
-                        <span class="oj-navigationlist-item-label">{{link.name}}</span>
+                        <span>{{link.name}}</span>
                     </router-link>
-                </a>
+                </li>
             </ul>
         </div>
     </div>
