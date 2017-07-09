@@ -29,18 +29,7 @@
               });
               Vue.component('my-layout-component', {
                   template: template,
-                  router: router,
-                  mounted() {
-                    $('#navigationlist').ojNavigationList({
-                      edge: 'top',
-                      navigationLevel: 'application'
-                    });
-                  },
-                  data: function() {
-                    return {
-                        links: NavDataFactory.createNavDataFactory()
-                    };
-                  }
+                  router: router
               });
         });
 </script>
