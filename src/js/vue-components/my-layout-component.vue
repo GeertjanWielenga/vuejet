@@ -10,8 +10,8 @@
                     <li v-for='link in links'>
                     <router-link :to='link.url'
                         class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                        <span :class='link.icon'></span>
-                        <span class="oj-navigationlist-item-label">{{link.name}}</span>
+                        <span :class='link.iconClass'></span>
+                        <span>{{link.name}}</span>
                     </router-link>
                     </li>
                 </ul>
