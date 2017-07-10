@@ -1,10 +1,27 @@
-define(['Vue'], function(Vue){
+define(['Vue'], function(Vue) {
   return Vue.extend({
-    template: `
-      <div class="oj-hybrid-padding">
-	    <h3>Dashboard Content Area</h3>
-        To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
-      </div>
-    `
+   template: `
+    <div class="oj-hybrid-padding">
+      <h3>Dashboard Content Area</h3>
+      <ul>
+        <li v-for='link in links'>
+          <a :href='link.url' target="_blank">{{link.title}}</a>
+        </li>
+      </ul>
+    </div>
+    `,
+    data: function() {
+      return {
+          links: [
+            {
+            'url': 'https://vuejs.org/',
+            'title': 'Vue'
+          },{
+            'url': 'https://twitter.com/vuejs',
+            'title': '@vuejs'
+          }
+        ]
+      };
+    }
   });
 });
