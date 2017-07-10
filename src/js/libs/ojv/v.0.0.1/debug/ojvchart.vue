@@ -7,10 +7,14 @@
     function (Vue) {
       Vue.component('ojvchart', {
           template: template,
+          props: {
+	    type: String,
+	    orientation: String
+          },
           mounted() {
             $('#chart').ojChart({
-                type: 'bar',
-                orientation: 'vertical',
+                type: this.type,
+                orientation: this.orientation,
                 stack: 'off',
                 series: [ {name: "Series 1", items: [42, 34]},
                              {name: "Series 2", items: [55, 30]},
