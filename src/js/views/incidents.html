@@ -1,8 +1,8 @@
 <div class="oj-hybrid-padding">
     <h3>Incidents Content Area</h3>
     <span class="oj-flex">
-        <ojvchart type="bar" orientation="vertical"/>
-        <ojvchart type="pie"/>
-        <ojvchart type="line" orientation="horizontal"/>
+        <ojvchart type="bar" orientation="vertical" :series="stats"/>
+        <ojvchart type="pie" orientation="vertical" :series="stats"/>
+        <ojvchart type="line" orientation="vertical" :series="stats"/>
     </span>
 </div>
