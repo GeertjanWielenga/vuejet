@@ -4,5 +4,10 @@
         <ojvchart type="bar" orientation="vertical" :series="stats"/>
         <ojvchart type="pie" orientation="vertical" :series="stats"/>
         <ojvchart type="line" orientation="vertical" :series="stats"/>
+        <p>Series:</p>
+        <ul>
+            <li v-for="stat in stats">{{ stat.name }} / {{ stat.items }}</li>
+        </ul>
     </span>
 </div>
+<!--https://www.sitepoint.com/fetching-data-third-party-api-vue-axios/-->
