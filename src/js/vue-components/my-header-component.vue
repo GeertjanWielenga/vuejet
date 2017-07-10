@@ -72,10 +72,14 @@
                                       match: function () {
                                           self.displayIsLarge = true;
                                           self.displayIsSmall = false;
+                                          $( "#userMenu" ).ojButton( {display: "all"} );
+                                          $( "#userMenu" ).ojButton( {icons: {end: 'oj-component-icon oj-button-menu-dropdown-icon'}} );
                                       },
                                       unmatch: function () {
                                           self.displayIsLarge = false;
                                           self.displayIsSmall = true;
+                                          $( "#userMenu" ).ojButton( {display: "icons"} );
+                                          $( "#userMenu" ).ojButton( {icons: {start: 'oj-icon demo-appheader-avatar', end: null}} );
                                       }
                                   })
                                 },
