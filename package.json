@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "oraclejet": "~3.1.0",
-    "vue":"latest",    
-    "require-vuejs":"latest",    
-    "vue-router":"latest"    
+    "require-vuejs": "latest",
+    "vue": "latest",
+    "vue-router": "latest",
+    "enquire.js": "2.1.6"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

@@ -49,6 +49,11 @@ module.exports = function (grunt) {
            cwd: 'node_modules/require-vuejs',
            src: ['**'], 
            dest: 'web/js/libs/require-vuejs'
+         },
+         {
+           cwd: 'node_modules/enquire.js',
+           src: ['**'], 
+           dest: 'web/js/libs/enquire.js'
          }
        ]
      },
