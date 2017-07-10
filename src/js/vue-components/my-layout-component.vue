@@ -1,11 +1,13 @@
 <template>
     <div class='oj-web-applayout-page'>
-        <my-header-component
-            class='oj-web-applayout-header'
-            name='App Name'>
-        </my-header-component>
+        <div class='oj-web-applayout-header'>
+            <my-header1-component
+                name='App Name'>
+            </my-header1-component>
+            <my-header2-component/>
+        </div>
         <div class="oj-web-applayout-max-width oj-web-applayout-content">
-            <router-view></router-view>
+            <router-view/>
         </div>
         <my-footer-component
             class='oj-web-applayout-footer'>
@@ -16,7 +18,8 @@
 <script>
 	define(['Vue', 'vue_router', 'routes',
 	  'ojs/ojnavigationlist',
-	  'vue!vue-components/my-header-component',
+	  'vue!vue-components/my-header1-component',
+	  'vue!vue-components/my-header2-component',
 	  'vue!vue-components/my-footer-component'
 	],
 			function (Vue, VueRouter, AppRoutes) {
