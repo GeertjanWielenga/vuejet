@@ -1,15 +1,8 @@
-<!--
- Copyright (c) 2014, 2017, Oracle and/or its affiliates.
- The Universal Permissive License (UPL), Version 1.0
- -->
 <div class="oj-hybrid-padding">
-  <header id="navigation">
-      <my-navigation-component></my-navigation-component>
-  </header>
-  <header id="header">
-      <my-header-component name="Dashboard"></my-header-component>
-  </header>
-  <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
-  </div>
+    <h3>Dashboard Content Area</h3>
+    <ul>
+        <li v-for='link in links'>
+            <a :href='link.url' target="_blank">{{link.title}}</a>
+        </li>
+    </ul>
 </div>
