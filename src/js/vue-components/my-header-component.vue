@@ -1,13 +1,18 @@
 <template>
+
     <div>
+
         <span class="oj-flex-bar oj-web-applayout-max-width oj-sm-align-items-center">
+
             <div class="oj-flex-bar-start oj-md-hide">
                 <button id="drawerToggleButton" class="oj-button-lg"></button>
             </div>
-            <div>
+
+            <div v-bind:class="[displayIsSmall ? 'oj-flex-bar-center-absolute' : 'oj-flex-bar-middle oj-sm-align-items-baseline']">
                 <span role="img" class="oj-sm-only-hide oj-icon demo-oracle-icon" title="Oracle Logo" alt="Oracle Logo"></span>
                 <span class="oj-web-applayout-header-title">{{name}}</span>
             </div>
+
             <div class="oj-flex-bar-end">
                 <button id="userMenu"/>
                 <ul id='menu1' >
@@ -17,7 +22,9 @@
                     <li id="out"><a href="#">Sign Out</a></li>
                 </ul>
             </div>
+
         </span>
+
         <span class="oj-flex-bar oj-web-applayout-max-width oj-sm-align-items-center">
             <div id="navigationlist" class='oj-flex-bar-end oj-sm-only-hide oj-md-condense'>
                 <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
@@ -31,16 +38,18 @@
                 </ul>
             </div>
         </span>
+
     </div>
+
 </template>
 
 <script>
 	define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
-	  'ojs/ojoffcanvas',
+	  'enquire', 'ojs/ojoffcanvas',
 	  'ojs/ojbutton', 'ojs/ojmenu', 'ojs/ojtoolbar',
 	  'ojs/ojarraytabledatasource',
 	  'ojs/ojcollectiontabledatasource'],
-			function (Vue, VueRouter, AppRoutes, NavDataFactory) {
+			function (Vue, VueRouter, AppRoutes, NavDataFactory, enquire) {
 			  Vue.use(VueRouter);
 			  var router = new VueRouter({
 				mode: 'hash',
@@ -52,9 +61,24 @@
 				props: ['name'],
 				data: function () {
 				  return {
-					links: NavDataFactory.createNavDataFactory()
+                                        displayIsLarge: false,
+                                        displayIsSmall: true,
+			                links: NavDataFactory.createNavDataFactory()
 				  };
 				},
+                                created: function () {
+                                  var self = this;
+                                  enquire.register("screen and (min-width: 760px)", {
+                                      match: function () {
+                                          self.displayIsLarge = true;
+                                          self.displayIsSmall = false;
+                                      },
+                                      unmatch: function () {
+                                          self.displayIsLarge = false;
+                                          self.displayIsSmall = true;
+                                      }
+                                  })
+                                },
 				mounted() {
 				  $('#navigationlist').ojNavigationList({
 					edge: 'top',
