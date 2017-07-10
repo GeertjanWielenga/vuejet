@@ -1,8 +1,8 @@
 define([
   './viewModels/dashboard',
-  './viewModels/incidents_1',
+  './viewModels/incidents',
   './viewModels/customers',
-  './viewModels/about_1'
+  './viewModels/about'
   ], function(dashboard, incidents, customers, about){
     return [
       {
