@@ -1,5 +1,5 @@
 define([
-  './viewModels/dashboard_1',
+  './viewModels/dashboard',
   './viewModels/incidents_1',
   './viewModels/customers',
   './viewModels/about_1'
