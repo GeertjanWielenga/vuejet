@@ -40,7 +40,9 @@
 			  Vue.component('my-header1-component', {
 				template: template,
 				router: router,
-				props: ['name'],
+				props: {
+                                  name: String
+                                },
 				data: function () {
 				  return {
 					displayIsLarge: false,
