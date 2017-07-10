@@ -4,7 +4,7 @@
         <div id="navigationlist" class='oj-flex-bar-end oj-sm-only-hide oj-md-condense'>
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
                 <li v-for='link in links'>
-                <router-link :to='link.url'
+                <router-link :to='link.path'
                     class="oj-navigationlist-focused-element oj-navigationlist-item-content">
                     <span :class='link.iconClass'></span>
                     <span>{{link.name}}</span>
@@ -17,8 +17,8 @@
 </template>
 
 <script>
-	define(['Vue', 'vue_router', 'routes', 'NavDataFactory'],
-			function (Vue, VueRouter, AppRoutes, NavDataFactory) {
+	define(['Vue', 'vue_router', 'routes', 'routes'],
+			function (Vue, VueRouter, AppRoutes, routes) {
 			  Vue.use(VueRouter);
 			  var router = new VueRouter({
 				mode: 'hash',
@@ -29,7 +29,7 @@
 				router: router,
 				data: function () {
 				  return {
-					links: NavDataFactory.createNavDataFactory()
+					links: routes
 				  };
 				},
 				mounted() {

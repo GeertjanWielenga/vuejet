@@ -26,12 +26,12 @@
 </template>
 
 <script>
-	define(['Vue', 'vue_router', 'routes', 'NavDataFactory',
+	define(['Vue', 'vue_router', 'routes',
 	  'enquire', 'ojs/ojoffcanvas',
 	  'ojs/ojbutton', 'ojs/ojmenu', 'ojs/ojtoolbar',
 	  'ojs/ojarraytabledatasource',
 	  'ojs/ojcollectiontabledatasource'],
-			function (Vue, VueRouter, AppRoutes, NavDataFactory, enquire) {
+			function (Vue, VueRouter, AppRoutes, enquire) {
 			  Vue.use(VueRouter);
 			  var router = new VueRouter({
 				mode: 'hash',
@@ -44,8 +44,7 @@
 				data: function () {
 				  return {
 					displayIsLarge: false,
-					displayIsSmall: true,
-					links: NavDataFactory.createNavDataFactory()
+					displayIsSmall: true
 				  };
 				},
 				created: function () {

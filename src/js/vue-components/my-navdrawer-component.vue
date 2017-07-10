@@ -3,7 +3,7 @@
         <div id="navDrawer" class="oj-web-applayout-offcanvas oj-offcanvas-start">
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
                 <li v-for='link in links'>
-                    <router-link :to='link.url' tag="a"
+                    <router-link :to='link.path' tag="a"
                         class="oj-navigationlist-focused-element oj-navigationlist-item-content">
                         <span :class='link.iconClass'></span>
                         <span>{{link.name}}</span>
@@ -15,12 +15,12 @@
 </template>
 
 <script>
-   define(['Vue', 'vue_router', 'routes', 'NavDataFactory'],
-    function (Vue, VueRouter, AppRoutes, NavDataFactory) {
+   define(['Vue', 'vue_router', 'routes'],
+    function (Vue, VueRouter, routes) {
       Vue.use(VueRouter);
             var router = new VueRouter({
               mode: 'hash',
-              routes: AppRoutes
+              routes: routes
             });
       Vue.component('my-navdrawer-component', {
           template: template,
@@ -33,7 +33,7 @@
           },
           data: function() {
               return {
-                  links: NavDataFactory.createNavDataFactory()
+                  links: routes
               };
           }
       });
