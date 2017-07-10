@@ -1,10 +1,5 @@
-define(['Vue'], function(Vue){
+define(['Vue', 'text!views/incidents.html'], function(Vue, file){
   return Vue.extend({
-    template: `
-      <div class="oj-hybrid-padding">
-	    <h3>Incidents Content Area</h3>
-        To change the content of this section, you will make edits to the incidents.html file located in the /js/views folder.
-      </div>
-    `
+    template: file
   });
 });
