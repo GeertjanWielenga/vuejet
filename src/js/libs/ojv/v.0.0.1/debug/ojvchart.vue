@@ -1,5 +1,5 @@
 <template>
-    <div id="chart"></div>
+    <div></div>
 </template>
 
 <script>
@@ -12,7 +12,7 @@
 	    orientation: String
           },
           mounted() {
-            $('#chart').ojChart({
+            $(this.$el).ojChart({
                 type: this.type,
                 orientation: this.orientation,
                 stack: 'off',
