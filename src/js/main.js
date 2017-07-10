@@ -31,6 +31,7 @@ requirejs.config(
     'customElements': 'libs/webcomponents/CustomElements',
     'proj4': 'libs/proj4js/dist/proj4-src',
     'css': 'libs/require-css/css',
+    'enquire': 'libs/enquire.js/dist/enquire',
     'Vue': 'libs/vue/dist/vue',
 	'vue': 'libs/require-vuejs/dist/require-vuejs',
 	'vue_router': 'libs/vue-router/dist/vue-router'
@@ -72,7 +73,7 @@ require(['ojs/ojcore', 'Vue',
 
       function init() {
 		new Vue({
-		  el: "#pageDrawer",
+		  el: "#pageDrawer"
         });
 		new Vue({
 		  el: "#pageContent"
