@@ -2,6 +2,7 @@ define(['Vue','vue!libs/ojv/v.0.0.1/debug/ojvgrid'], function(Vue) {
   return Vue.extend({
    template: `
     <div class="oj-hybrid-padding">
+	    <h3>Customers Content Area</h3>
 		<section id="grid">
 		  <form id="search">
 			  Search <input name="query" v-model="searchQuery">
