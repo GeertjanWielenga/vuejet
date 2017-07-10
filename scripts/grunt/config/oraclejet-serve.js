@@ -30,6 +30,7 @@ module.exports = function () {
        sourceFiles:
        {
          files: [
+			'src/js/libs/ojv/v.0.0.1/debug/**/*.vue',
 			'src/js/vue-components/**/*.vue',
 			'src/js/views/**/*.html',
 			'src/js/viewModels/**/*.js',
