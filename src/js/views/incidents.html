@@ -1,19 +1,44 @@
 <div class="oj-hybrid-padding">
-    <h3>Incidents Content Area</h3>
+
     <span class="oj-flex">
-        <ojvchart type="bar" orientation="vertical" :series="stats"/>
-        <ul>
-            <p>Raw Data:</p>
-            <li v-for="stat in stats">{{ stat.name }} --- {{ stat.items }}</li>
-        </ul>
-        <ojvgauge
-            :min=0
-            :max=100
-            :value=value
-            style="height:150px"/>
+
+        <span class="oj-flex-item">
+
+            <h3>Chart</h3>
+            <ojvchart type="bar" orientation="vertical" :series="stats"/>
+            <br/><br/><br/><br/>
+
+            <h3>Raw Data</h3>
+            <ul>
+                <li v-for="stat in stats">{{ stat.name }} --- {{ stat.items }}</li>
+            </ul>
+
+        </span>
+
+        <span class="oj-flex-item">
+
+            <h3>Gauge</h3>
+            <ojvgauge
+                :min=0
+                :max=100
+                :value=value
+                @changed="setValue"
+                style="height:150px"/>
+            <b>New value: {{value}}</b>
+
+            <br/><br/><br/><br/>
+
+            <h3>Date Picker</h3>
+            <ojvdatepicker
+                :initial="myDate"
+                @changed="setDate">
+            </ojvdatepicker>
+            <b>Selected date: {{myDate}}</b>
+
+        </span>
+
     </span>
-        <datepicker :initial="myDate" @changed="setDate"></datepicker>
-        <b>Selected date: {{myDate}}</b>
+
 </div>
 <!--https://www.sitepoint.com/fetching-data-third-party-api-vue-axios/
 https://vuejs.org/v2/examples/select2.html

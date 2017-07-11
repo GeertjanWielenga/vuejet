@@ -20,6 +20,9 @@ define(['Vue', 'text!views/incidents.html',
 			  };
 			},
 			methods: {
+			  setValue(val) {
+				this.value = val;
+			  },
 			  setDate(val) {
 				this.myDate = val;
 			  }

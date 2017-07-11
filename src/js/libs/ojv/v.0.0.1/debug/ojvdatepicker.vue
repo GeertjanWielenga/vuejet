@@ -6,7 +6,7 @@
 
 <script>
     define(['Vue'], function (Vue) {
-      Vue.component('datepicker', {
+      Vue.component('ojvdatepicker', {
             template: template,
             props: ['initial'],
             data() {

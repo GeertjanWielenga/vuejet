@@ -18,7 +18,11 @@
                 max: this.max,
                 value: this.value,
                 orientation: 'circular',
-                readOnly: false
+                readOnly: false,
+                optionChange: (event, ui) => {
+                  this.$emit('changed', ui['value']);
+                  this.value = ui['value'];
+                }
             });
           }
       });
