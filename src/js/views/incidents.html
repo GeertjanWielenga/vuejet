@@ -2,13 +2,18 @@
     <h3>Incidents Content Area</h3>
     <span class="oj-flex">
         <ojvchart type="bar" orientation="vertical" :series="stats"/>
-        <ojvchart type="pie" orientation="vertical" :series="stats"/>
-        <ojvchart type="line" orientation="vertical" :series="stats"/>
-        <p>Series:</p>
         <ul>
-            <li v-for="stat in stats">{{ stat.name }} / {{ stat.items }}</li>
+            <p>Raw Data:</p>
+            <li v-for="stat in stats">{{ stat.name }} --- {{ stat.items }}</li>
         </ul>
+        <ojvgauge
+            :min=0
+            :max=100
+            :value=value
+            style="height:150px"/>
     </span>
+        <datepicker :initial="myDate" @changed="setDate"></datepicker>
+        <b>Selected date: {{myDate}}</b>
 </div>
 <!--https://www.sitepoint.com/fetching-data-third-party-api-vue-axios/
 https://vuejs.org/v2/examples/select2.html
