@@ -1,16 +1,10 @@
-<STYLE TYPE="text/css">
-<!--
-  @import url(css/override.css);
--->
-</STYLE>
-
 <div class="oj-hybrid-padding">
     <h3>Customers Content Area</h3>
     <form id="search">
         Search: <input name="query" v-model="searchQuery">
     </form>
     <br/>
-    <ojvgrid
+    <ojvgrid class="ojvgridtable ojvgridth ojvgridtd"
         :data="gridData"
         :columns="gridColumns"
         :filter-key="searchQuery">
