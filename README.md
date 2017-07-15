@@ -27,6 +27,10 @@ be replaced with Vue in Oracle JET applications.
 
  **Status:** Done. See the 'vue-components' folder.
 
+### Split combined constructs into HTML/JS files.
+
+ **Status:** In progress. Done for Vue-based Oracle JET modules, not yet for Vue components.
+
 ### Wrap Oracle JET components in Vue components.
 
  **Status:** In progress. Each Oracle JET component is a jQuery UI component
