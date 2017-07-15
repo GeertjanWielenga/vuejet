@@ -2,8 +2,8 @@
     <h3>News List</h3>
     <template>
       <div>
-        <SourceSelection></SourceSelection>
-        <NewsList></NewsList>
+           <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
+           <NewsList v-bind:source="source"></NewsList>
       </div>
     </template>
 

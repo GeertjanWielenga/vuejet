@@ -15,6 +15,11 @@ define(['Vue', 'text!views/about.html', 'vue_resource',
 			  return {
 				  source: ""
 			  };
+			},
+			methods: {
+			  sourceChanged: function (source) {
+				this.source = source;
+			  }
 			}
 		  });
 		});
