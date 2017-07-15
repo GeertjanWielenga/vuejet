@@ -32,3 +32,6 @@ be replaced with Vue in Oracle JET applications.
  **Status:** Done. See index.html.
 
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
+
+ **Status:** vue-resource is done, see the About module, though vue-resource
+ is retired; next step is to integrate Axios.
