@@ -58,3 +58,9 @@ be replaced with Vue in Oracle JET applications.
 
  **Status:** vue-resource is done, see the About module, though vue-resource
  is retired; next step is to integrate Axios.
+
+## References and Further Information
+
+#### [Retiring vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
+#### [Vue.js 2 & Vue-Resource- Real-World Vue Application With External API Access](https://medium.com/codingthesmartway-com-blog/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access-c3de83f25c00)
+
