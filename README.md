@@ -27,6 +27,12 @@ be replaced with Vue in Oracle JET applications.
 
  **Status:** Done. See the 'vue-components' folder.
 
+### Wrap Oracle JET components in Vue components.
+
+ **Status:** In progress. Each Oracle JET component is a jQuery UI component
+ that needs to be wrapped as a Vue component, so that custom tags
+ provided by Vue can be used to load Oracle JET components.
+
 ### Replace Oracle JET router with vue-router.
 
  **Status:** Done. See the package.json, main.js, and Header2.vue files.
