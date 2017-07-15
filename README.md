@@ -17,7 +17,9 @@ be replaced with Vue in Oracle JET applications.
 
 ### Register Vue via Require in an Oracle JET application.
 
- **Status:** Done. See the package.json and main.js files.
+ **Status:** Done. See the 
+ [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) and
+ [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js) files.
 
 ### Rewrite Oracle JET modules to use Vue instead of Knockout.
 
