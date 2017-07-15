@@ -1,1 +1,1 @@
-# Full replacement of Knockout with Vue in an Oracle JET context
+# Full Replacement of Knockout with Vue in Oracle JET
