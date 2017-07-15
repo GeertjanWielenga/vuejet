@@ -17,12 +17,18 @@ be replaced with Vue in Oracle JET applications.
 
 ### Register Vue via Require in an Oracle JET application.
 
- **Status.** Done. See package.json and main.js.
+ **Status:** Done. See package.json and main.js.
 
 ### Create and load Vue components in Oracle JET modules.
 
+ **Status:** Done. See vue-components folder.
+
 ### Replace Oracle JET router with vue-router.
 
+ **Status:** Done. See package.json, main.js, and Header2.vue.
+
 ### Rewrite 'navdrawer' Oracle JET template to use Vue components.
+
+ **Status:** Done. See index.html.
 
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
