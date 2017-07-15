@@ -2,7 +2,7 @@
     <div>
       <div class="jumbotron">
         <h4>Select News Source</h4>
-        <select class="form-control" v-on:change="sourceChanged">
+        <select id="basicSelect" class="form-control" v-on:change="sourceChanged">
           <option value="">Please select news source ...</option>
           <option v-for="source in sources" v-bind:value="source.id">{{source.name}}</option>
         </select>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    define(['Vue'], function (Vue) {
+    define(['Vue', 'ojs/ojselectcombobox'], function (Vue) {
       Vue.component('SourceSelection', {
           template: template,
           data: function() {
@@ -39,6 +39,10 @@
               .then(response => {
                 this.sources = response.data.sources;
               });
+          },
+          mounted() {
+            $('#basicSelect').ojSelect({
+            });
           }
       });
     });
