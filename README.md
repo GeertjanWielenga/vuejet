@@ -13,3 +13,14 @@ of Knockout:
 Investigate whether and to what extend Knockout can
 be replaced with Vue in Oracle JET applications.
 
+## Tasks
+
+### Register Vue via Require in an Oracle JET application.
+
+### Create and load Vue components in Oracle JET modules.
+
+### Replace Oracle JET router with vue-router.
+
+### Rewrite 'navdrawer' Oracle JET template to use Vue components.
+
+### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
