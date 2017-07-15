@@ -11,6 +11,7 @@
     "require-vuejs": "latest",
     "vue": "latest",
     "vue-router": "latest",
+    "vue-resource": "latest",
     "enquire.js": "2.1.6"
   },
   "devDependencies": {
