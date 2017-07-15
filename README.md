@@ -24,7 +24,7 @@ be replaced with Vue in Oracle JET applications.
 ### Rewrite Oracle JET modules to use Vue instead of Knockout.
 
  **Status:** Done. See the 
- [views[(https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/views) folder and the
+ [views](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/views) folder and the
  [viewModels](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/viewModels) folder.
 
 ### Create and load Vue components in Oracle JET modules.
