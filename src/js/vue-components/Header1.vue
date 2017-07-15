@@ -37,7 +37,7 @@
 				mode: 'hash',
 				routes: AppRoutes
 			  });
-			  Vue.component('my-header1-component', {
+			  Vue.component('Header1', {
 				template: template,
 				router: router,
 				props: {

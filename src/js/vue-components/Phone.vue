@@ -3,9 +3,9 @@
         <div id="navDrawer" class="oj-web-applayout-offcanvas oj-offcanvas-start">
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
                 <li v-for='link in links'>
-                    <router-link :to='link.path' tag="a"
+                    <router-link v-bind:to='link.path' tag="a"
                         class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                        <span :class='link.iconClass'></span>
+                        <span v-bind:class='link.iconClass'></span>
                         <span>{{link.name}}</span>
                     </router-link>
                 </li>
@@ -22,7 +22,7 @@
               mode: 'hash',
               routes: routes
             });
-      Vue.component('my-navdrawer-component', {
+      Vue.component('PhoneMenu', {
           template: template,
           router: router,
           mounted() {

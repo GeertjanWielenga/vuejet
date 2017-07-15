@@ -1,26 +1,22 @@
 <template>
     <div class='oj-web-applayout-page'>
         <div class='oj-web-applayout-header'>
-            <my-header1-component
-                name='App Name'>
-            </my-header1-component>
-            <my-header2-component/>
+            <Header1 name='App Name'/>
+            <Header2/>
         </div>
         <div class="oj-web-applayout-max-width oj-web-applayout-content">
             <router-view/>
         </div>
-        <my-footer-component
-            class='oj-web-applayout-footer'>
-        </my-footer-component>
+        <Footer class='oj-web-applayout-footer'/>
     </div>
 </template>
 
 <script>
 	define(['Vue', 'vue_router', 'routes',
 	  'ojs/ojnavigationlist',
-	  'vue!vue-components/my-header1-component',
-	  'vue!vue-components/my-header2-component',
-	  'vue!vue-components/my-footer-component'
+	  'vue!vue-components/Header1',
+	  'vue!vue-components/Header2',
+	  'vue!vue-components/Footer'
 	],
 			function (Vue, VueRouter, AppRoutes) {
 			  Vue.use(VueRouter);
@@ -28,7 +24,7 @@
 				mode: 'hash',
 				routes: AppRoutes
 			  });
-			  Vue.component('my-layout-component', {
+			  Vue.component('Layout', {
 				template: template,
 				router: router
 			  });

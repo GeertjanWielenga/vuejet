@@ -15,7 +15,7 @@
 
 <script>
     define(['Vue'], function (Vue) {
-      Vue.component('my-footer-component', {
+      Vue.component('Footer', {
           template: template,
           data: function() {
             return {
