@@ -69,8 +69,8 @@ requirejs.config(
  * objects in the callback
  */
 require(['ojs/ojcore', 'Vue', 
-  'vue!vue-components/Phone',
-  'vue!vue-components/Layout',
+  'vue!vue-components/Layout1',
+  'vue!vue-components/Layout2',
 ],
   function (oj, Vue) { // this callback gets executed when all required modules are loaded
 

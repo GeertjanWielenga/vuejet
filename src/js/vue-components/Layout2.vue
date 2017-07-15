@@ -24,7 +24,7 @@
 				mode: 'hash',
 				routes: AppRoutes
 			  });
-			  Vue.component('Layout', {
+			  Vue.component('Layout2', {
 				template: template,
 				router: router
 			  });

@@ -22,7 +22,7 @@
               mode: 'hash',
               routes: routes
             });
-      Vue.component('PhoneMenu', {
+      Vue.component('Layout1', {
           template: template,
           router: router,
           mounted() {
