@@ -34,7 +34,8 @@ requirejs.config(
     'enquire': 'libs/enquire.js/dist/enquire',
     'Vue': 'libs/vue/dist/vue',
 	'vue': 'libs/require-vuejs/dist/require-vuejs',
-	'vue_router': 'libs/vue-router/dist/vue-router'
+	'vue_router': 'libs/vue-router/dist/vue-router',
+	'vue_resource': 'libs/vue-resource/dist/vue-resource'
   }
   //endinjector
   ,
@@ -52,6 +53,10 @@ requirejs.config(
 	'vue_router': 
     {
 	  'exports': 'VueRouter'
+	},
+	'vue_resource': 
+    {
+	  'exports': 'VueResource'
 	}
   }
 }
