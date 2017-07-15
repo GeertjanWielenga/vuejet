@@ -41,6 +41,10 @@ be replaced with Vue in Oracle JET applications.
 
  **Status:** Done. See the index.html file.
 
+### Remove Knockout from the application.
+
+ **Status:** Done. No more reference to Knockout anywhere.
+
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
  **Status:** vue-resource is done, see the About module, though vue-resource
