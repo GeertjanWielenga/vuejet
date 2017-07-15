@@ -17,19 +17,23 @@ be replaced with Vue in Oracle JET applications.
 
 ### Register Vue via Require in an Oracle JET application.
 
- **Status:** Done. See package.json and main.js.
+ **Status:** Done. See the package.json and main.js files.
+
+### Rewrite Oracle JET modules to use Vue instead of Knockout.
+
+ **Status:** Done. See the 'views' folder and the 'viewModels' folder.
 
 ### Create and load Vue components in Oracle JET modules.
 
- **Status:** Done. See vue-components folder.
+ **Status:** Done. See the 'vue-components' folder.
 
 ### Replace Oracle JET router with vue-router.
 
- **Status:** Done. See package.json, main.js, and Header2.vue.
+ **Status:** Done. See the package.json, main.js, and Header2.vue files.
 
 ### Rewrite 'navdrawer' Oracle JET template to use Vue components.
 
- **Status:** Done. See index.html.
+ **Status:** Done. See the index.html file.
 
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
