@@ -49,7 +49,7 @@ module.exports = function (grunt) {
            cwd: 'node_modules/vue-resource',
            src: ['**'], 
            dest: 'web/js/libs/vue-resource'
-         }
+         },
          {
            cwd: 'node_modules/require-vuejs',
            src: ['**'], 
