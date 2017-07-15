@@ -17,6 +17,8 @@ be replaced with Vue in Oracle JET applications.
 
 ### Register Vue via Require in an Oracle JET application.
 
+<u>Status.</u> Done. See package.json and main.js.
+
 ### Create and load Vue components in Oracle JET modules.
 
 ### Replace Oracle JET router with vue-router.
