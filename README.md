@@ -6,7 +6,7 @@ of Knockout:
 
    * vue
    * vue-router
-   * vue-resource
+   * vue-resource (retired) and Axios
 
 ## Purpose 
 
