@@ -35,7 +35,10 @@ be replaced with Vue in Oracle JET applications.
 
 ### Replace Oracle JET router with vue-router.
 
- **Status:** Done. See the [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json), [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js), and Header2.vue files.
+ **Status:** Done. See the 
+ [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json), 
+ [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js), and 
+ [Header2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header2.vue) files.
 
 ### Provide new solution for handling responsive design.
 
