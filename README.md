@@ -8,7 +8,7 @@ of Knockout:
    * vue-router
    * vue-resource
 
-** Purpose 
+## Purpose 
 
 Investigate whether and to what extend Knockout can
 be replaced with Vue in Oracle JET applications.
