@@ -4,9 +4,9 @@ Experimental Demo App illustrating inclusion of
 the following in an Oracle JET app, with the exclusion
 of Knockout:
 
-   * vue
-   * vue-router
-   * vue-resource (retired) and Axios
+   * [vue](https://vuejs.org/)
+   * [vue-router](https://github.com/vuejs/vue-router)
+   * [vue-resource](https://github.com/pagekit/vue-resource) ([retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)) and Axios
    * [enquire](http://wicky.nillia.ms/enquire.js) (for responsive design)
 
 ## Purpose 
