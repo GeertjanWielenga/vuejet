@@ -9,7 +9,7 @@ of Knockout:
    * [vue-router](https://github.com/vuejs/vue-router)
    * [vue-resource](https://github.com/pagekit/vue-resource) 
     ([retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)) and 
-    [vue-axios](https://github.com/imcvampire/vue-axios)
+    [axios](https://github.com/mzabriskie/axios) with [vue-axios](https://github.com/imcvampire/vue-axios)
    * [enquire](http://wicky.nillia.ms/enquire.js) (for responsive design)
 
 ## Purpose 
@@ -103,10 +103,12 @@ After cloning the repo, take the following steps in the order below.
 
 ### 11. Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
- **Status:** vue-resource is done, see the 
+ **Status:** Done. After integrating vue-resource successfully, it was removed 
+ because it has been [retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
+ and replaced with [axios](https://github.com/mzabriskie/axios) 
+ and [vue-axios](https://github.com/imcvampire/vue-axios). See the 
  [about.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/about.html) and
- [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) files, although vue-resource
- is retired; the next step is to integrate Axios.
+ [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) files.
 
 ## References and Further Information
 
