@@ -4,9 +4,7 @@
             <Header1 name='App Name'/>
             <Header2/>
         </div>
-        <div class="oj-web-applayout-max-width oj-web-applayout-content">
-            <router-view/>
-        </div>
+        <router-view class="oj-web-applayout-max-width oj-web-applayout-content"/>
         <Footer class='oj-web-applayout-footer'/>
     </div>
 </template>
