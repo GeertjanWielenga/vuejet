@@ -37,19 +37,19 @@ After cloning the repo, take the following steps in the order below.
 
 ## Tasks
 
-   1. ### Register Vue via Require in an Oracle JET application.
+ ### 1. Register Vue via Require in an Oracle JET application.
 
  **Status:** Done. See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) and
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js) files.
 
-   1. ### Rewrite Oracle JET modules to use Vue instead of Knockout.
+### 2. Rewrite Oracle JET modules to use Vue instead of Knockout.
 
  **Status:** Done. See the 
  [views](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/views) folder and the
  [viewModels](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/viewModels) folder.
 
-### Create and load Vue components in Oracle JET modules.
+### 3. Create and load Vue components in Oracle JET modules.
 
  **Status:** Done. See the 
  [vue-components](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/vue-components) 
@@ -57,14 +57,14 @@ After cloning the repo, take the following steps in the order below.
  [require-vuejs](https://github.com/edgardleal/require-vuejs), as shown in
  [Layout2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Layout2.vue).
 
-### Split combined constructs into HTML/JS files.
+### 4. Split combined constructs into HTML/JS files.
 
  **Status:** In progress. Done for Vue-based Oracle JET modules, not yet for Vue components.
  See the
  [dashboard.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/dashboard.html) and
  [dashboard.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/dashboard.js) files.
 
-### Wrap Oracle JET components in Vue components.
+### 5. Wrap Oracle JET components in Vue components.
 
  **Status:** In progress. Each Oracle JET component is a jQuery UI component
  that needs to be wrapped as a Vue component, so that custom tags
@@ -72,36 +72,36 @@ After cloning the repo, take the following steps in the order below.
  [ojvdatepicker.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/libs/ojv/v.0.0.1/debug/ojvdatepicker.vue) and the
  [ojvchart.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/libs/ojv/v.0.0.1/debug/ojvchart.vue) files.
 
-### Replace Oracle JET router with vue-router.
+### 6. Replace Oracle JET router with vue-router.
 
  **Status:** Done. See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json), 
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js), and 
  [Header2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header2.vue) files.
 
-### Provide new solution for handling responsive design.
+### 7. Provide new solution for handling responsive design.
 
  **Status:** Done. Knockout-based utility classes for responsive design
  are replace by Enquire.js. See the
  [Header1.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header1.vue) file.
 
-### Rewrite 'navdrawer' Oracle JET template to use Vue components.
+### 8. Rewrite 'navdrawer' Oracle JET template to use Vue components.
 
  **Status:** Done. See the 
  [index.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/index.html) and the
  [Layout2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Layout2.vue) files.
 
-### Include Vue libraries in build and serve Grunt tasks.
+### 9. Include Vue libraries in build and serve Grunt tasks.
 
  **Status:** Done. See the
  [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) and 
  [oraclejet-serve.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-serve.js) files.
 
-### Remove Knockout from the application.
+### 10. Remove Knockout from the application.
 
  **Status:** Done. No more references to Knockout anywhere.
 
-### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
+### 11. Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
  **Status:** vue-resource is done, see the 
  [about.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/about.html) and
