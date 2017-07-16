@@ -33,8 +33,10 @@
                                         .then(response => {
                                           this.articles = response.data.articles;
                                         });
-                        $('#filmStrip').ojFilmStrip("refresh");
                   }
+                },
+                updated: function() {
+                  $('#filmStrip').ojFilmStrip("refresh");
                 },
                 created: function () {
                   this.updateSource(this.source);
