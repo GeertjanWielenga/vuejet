@@ -17,7 +17,8 @@ be replaced with Vue in Oracle JET applications.
 
 ## Set Up
 
-`npm install`
+`npm install`: dependencies set in the
+ [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) file are downloaded.
 
 `grunt build`
  
