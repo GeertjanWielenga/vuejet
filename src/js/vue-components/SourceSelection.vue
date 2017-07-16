@@ -26,7 +26,6 @@
           },
           methods: {
             sourceChanged: function(e) {
-             alert('hello2');
              for (var i=0; i<this.sources.length; i++) {
                if (this.sources[i].id == e.target.value) {
                  this.source = this.sources[i];
