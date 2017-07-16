@@ -5,6 +5,7 @@ the following in an Oracle JET app, with the exclusion
 of Knockout:
 
    * [vue](https://vuejs.org/)
+   * [require-vuejs](https://github.com/edgardleal/require-vuejs)
    * [vue-router](https://github.com/vuejs/vue-router)
    * [vue-resource](https://github.com/pagekit/vue-resource) ([retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)) and Axios
    * [enquire](http://wicky.nillia.ms/enquire.js) (for responsive design)
