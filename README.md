@@ -26,8 +26,8 @@ After cloning the repo, take the following steps in the order below.
 
 `grunt build`: the `web` staging folder is created and the custom libraries defined in the
   [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) 
-  file are automatically moved to `web/js/libs`. The customer libraries
-  are the Vue libraries, together with Enquire.
+  file are automatically moved to `web/js/libs`. The custom libraries
+  are the Vue libraries, together with Enquire, listed above.
 
 `grunt serve`: the application in the `web` staging folder opens in the browser, while
  the watch list defined in the
