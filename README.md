@@ -15,6 +15,14 @@ of Knockout:
 Investigate whether and to what extend Knockout can
 be replaced with Vue in Oracle JET applications.
 
+## Set Up
+
+`npm install`
+
+`grunt build`
+ 
+`grunt serve`
+
 ## Tasks
 
 ### Register Vue via Require in an Oracle JET application.
