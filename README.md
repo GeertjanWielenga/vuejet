@@ -20,8 +20,10 @@ be replaced with Vue in Oracle JET applications.
 `npm install`: dependencies set in the
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) file are downloaded.
 
-`grunt build`
- 
+`grunt build`: the `web` staging folder is created and the custom libraries defined in the
+  [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) 
+  file are automatically moved to `web/js/libs`. 
+
 `grunt serve`
 
 ## Tasks
