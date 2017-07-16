@@ -53,19 +53,24 @@ be replaced with Vue in Oracle JET applications.
 ### Provide new solution for handling responsive design.
 
  **Status:** Done. Knockout-based utility classes for responsive design
- are replace by Enquire.js.
+ are replace by Enquire.js. See the
+ [Header1.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header1.vue) file.
 
 ### Rewrite 'navdrawer' Oracle JET template to use Vue components.
 
- **Status:** Done. See the index.html file.
+ **Status:** Done. See the 
+ [index.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/index.html) and the
+ [Layout2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Layout2.vue) files.
 
 ### Include Vue libraries in build and serve Grunt tasks.
 
- **Status:** Done. See oraclejet-build.js and oraclejet-serve.js files.
+ **Status:** Done. See the
+ [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) and 
+ [oraclejet-serve.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-serve.js) files.
 
 ### Remove Knockout from the application.
 
- **Status:** Done. No more reference to Knockout anywhere.
+ **Status:** Done. No more references to Knockout anywhere.
 
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
