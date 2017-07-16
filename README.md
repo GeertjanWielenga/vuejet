@@ -37,13 +37,13 @@ After cloning the repo, take the following steps in the order below.
 
 ## Tasks
 
- 1. ### Register Vue via Require in an Oracle JET application.
+   1. ### Register Vue via Require in an Oracle JET application.
 
  **Status:** Done. See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) and
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js) files.
 
- 1. ### Rewrite Oracle JET modules to use Vue instead of Knockout.
+   1. ### Rewrite Oracle JET modules to use Vue instead of Knockout.
 
  **Status:** Done. See the 
  [views](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/views) folder and the
