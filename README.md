@@ -9,7 +9,7 @@ of Knockout:
    * [vue-router](https://github.com/vuejs/vue-router)
    * [vue-resource](https://github.com/pagekit/vue-resource) 
     ([retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)) and 
-    [vue-axios](https://github.com/imcvampire/vue-axios).
+    [vue-axios](https://github.com/imcvampire/vue-axios)
    * [enquire](http://wicky.nillia.ms/enquire.js) (for responsive design)
 
 ## Purpose 
