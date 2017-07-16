@@ -27,7 +27,7 @@ After cloning the repo, take the following steps in the order below.
   file are automatically moved to `web/js/libs`. The customer libraries
   are the Vue libraries, together with Enquire.
 
-`grunt serve`: the application opens in the browser, while
+`grunt serve`: the application in the `web` staging folder opens in the browser, while
  the watch list defined in the
  [oraclejet-serve.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-serve.js)
  file is used to ensure that changes are automatically reloaded. 
