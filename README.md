@@ -22,9 +22,14 @@ be replaced with Vue in Oracle JET applications.
 
 `grunt build`: the `web` staging folder is created and the custom libraries defined in the
   [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) 
-  file are automatically moved to `web/js/libs`. 
+  file are automatically moved to `web/js/libs`. The customer libraries
+  are the Vue libraries, together with Enquire.
 
-`grunt serve`
+`grunt serve`: the application opens in the browser, while
+ the watch list defined in the
+ [oraclejet-serve.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-serve.js)
+ file is used to ensure that changes are automatically reloaded. 
+
 
 ## Tasks
 
