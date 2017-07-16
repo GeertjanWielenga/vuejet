@@ -109,7 +109,7 @@ After cloning the repo, take the following steps in the order below.
  and [vue-axios](https://github.com/imcvampire/vue-axios). See the 
  [about.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/about.html) and
  [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) 
- files, which integrates usage of axios, defined in
+ files, which integrates usage of `axios`, defined in
  [SourceSelection.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/SourceSelection.vue).
 
 ## References and Further Information
