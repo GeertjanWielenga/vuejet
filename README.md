@@ -103,12 +103,14 @@ After cloning the repo, take the following steps in the order below.
 
 ### 11. Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
- **Status:** Done. After integrating vue-resource successfully, it was removed 
+ **Status:** Done. After integrating [vue-resource](https://github.com/pagekit/vue-resource) successfully, it was removed 
  because it has been [retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
  and replaced with [axios](https://github.com/mzabriskie/axios) 
  and [vue-axios](https://github.com/imcvampire/vue-axios). See the 
  [about.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/about.html) and
- [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) files.
+ [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) 
+ files, which integrates usage of axios, defined in
+ [SourceSelection.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/SourceSelection.vue).
 
 ## References and Further Information
 
