@@ -32,7 +32,10 @@ be replaced with Vue in Oracle JET applications.
 ### Create and load Vue components in Oracle JET modules.
 
  **Status:** Done. See the 
- [vue-components](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/vue-components) folder.
+ [vue-components](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/vue-components) 
+ folder, containing Vue components, loaded via 
+ [require-vuejs](https://github.com/edgardleal/require-vuejs), as shown in
+ [Layout2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Layout2.vue).
 
 ### Split combined constructs into HTML/JS files.
 
