@@ -51,6 +51,16 @@ module.exports = function (grunt) {
            dest: 'web/js/libs/vue-resource'
          },
          {
+           cwd: 'node_modules/vue-axios',
+           src: ['**'], 
+           dest: 'web/js/libs/vue-axios'
+         },
+         {
+           cwd: 'node_modules/axios',
+           src: ['**'], 
+           dest: 'web/js/libs/axios'
+         },
+         {
            cwd: 'node_modules/require-vuejs',
            src: ['**'], 
            dest: 'web/js/libs/require-vuejs'
