@@ -3,10 +3,10 @@
     <div class="oj-flex-bar oj-web-applayout-max-width oj-sm-align-items-center">
         <div id="navigationlist" class='oj-flex-bar-end oj-sm-only-hide oj-md-condense'>
             <ul class='oj-md-justify-content-flex-end oj-web-applayout-navbar'>
-                <li v-for='link in links'>
-                <router-link :to='link.path'
+                <li v-bind:id='link.id' v-for='link in links'>
+                <router-link v-bind:to='link.path'
                     class="oj-navigationlist-focused-element oj-navigationlist-item-content">
-                    <span :class='link.iconClass'></span>
+                    <span v-bind:class='link.iconClass'></span>
                     <span>{{link.name}}</span>
                 </router-link>
                 </li>
@@ -34,6 +34,10 @@
 				},
 				mounted() {
 				  $('#navigationlist').ojNavigationList({
+                                        selection: 'dashboard',
+                                        optionChange: (event, ui) => {
+                                            selection: ui['value'];
+                                        },
 					edge: 'top',
 					navigationLevel: 'application'
 				  });

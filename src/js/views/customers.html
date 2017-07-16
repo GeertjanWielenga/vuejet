@@ -4,9 +4,9 @@
         Search: <input name="query" v-model="searchQuery">
     </form>
     <br/>
-    <ojvgrid class="ojvgridtable ojvgridth ojvgridtd"
-        :data="gridData"
-        :columns="gridColumns"
-        :filter-key="searchQuery">
+    <ojvgrid
+        v-bind:data="gridData"
+        v-bind:columns="gridColumns"
+        v-bind:filter-key="searchQuery">
     </ojvgrid>
 </div>
