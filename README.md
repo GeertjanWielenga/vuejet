@@ -17,6 +17,8 @@ be replaced with Vue in Oracle JET applications.
 
 ## Set Up
 
+After cloning the repo, take the following steps in the order below.
+
 `npm install`: dependencies set in the
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) file are downloaded.
 
