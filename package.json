@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "oraclejet": "~3.1.0",
-    "require-vuejs": "latest",
     "vue": "latest",
+    "require-vuejs": "latest",
     "vue-router": "latest",
     "vue-resource": "latest",
+    "axios": "latest",
+    "vue-axios": "latest",
     "enquire.js": "2.1.6"
   },
   "devDependencies": {
