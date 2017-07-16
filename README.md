@@ -7,6 +7,7 @@ of Knockout:
    * vue
    * vue-router
    * vue-resource (retired) and Axios
+   * [enquire](http://wicky.nillia.ms/enquire.js) (for responsive design)
 
 ## Purpose 
 
