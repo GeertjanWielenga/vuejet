@@ -36,12 +36,17 @@ be replaced with Vue in Oracle JET applications.
 ### Split combined constructs into HTML/JS files.
 
  **Status:** In progress. Done for Vue-based Oracle JET modules, not yet for Vue components.
+ See the
+ [dashboard.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/dashboard.html) and
+ [dashboard.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/dashboard.js) files.
 
 ### Wrap Oracle JET components in Vue components.
 
  **Status:** In progress. Each Oracle JET component is a jQuery UI component
  that needs to be wrapped as a Vue component, so that custom tags
- provided by Vue can be used to load Oracle JET components.
+ provided by Vue can be used to load Oracle JET components. See the
+ [ojvdatepicker.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/libs/ojv/v.0.0.1/debug/ojvdatepicker.vue) and the
+ [ojvchart.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/libs/ojv/v.0.0.1/debug/ojvchart.vue) files.
 
 ### Replace Oracle JET router with vue-router.
 
@@ -74,8 +79,10 @@ be replaced with Vue in Oracle JET applications.
 
 ### Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
- **Status:** vue-resource is done, see the About module, though vue-resource
- is retired; next step is to integrate Axios.
+ **Status:** vue-resource is done, see the 
+ [about.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/about.html) and
+ [about.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/about.js) files, although vue-resource
+ is retired; the next step is to integrate Axios.
 
 ## References and Further Information
 
