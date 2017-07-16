@@ -35,7 +35,8 @@ requirejs.config(
     'Vue': 'libs/vue/dist/vue',
     'vue': 'libs/require-vuejs/dist/require-vuejs',
     'vue_router': 'libs/vue-router/dist/vue-router',
-    'vue_resource': 'libs/vue-resource/dist/vue-resource'
+    'axios': 'libs/axios/dist/axios',
+    'vue_axios': 'libs/vue-axios/dist/vue-axios.es5'
   }
   //endinjector
   ,
@@ -54,9 +55,13 @@ requirejs.config(
     {
 	  'exports': 'VueRouter'
 	},
-	'vue_resource': 
+	'vue_axios': 
     {
-	  'exports': 'VueResource'
+	  'exports': 'VueAxios'
+	},
+	'axios': 
+    {
+	  'exports': 'axios'
 	}
   }
 }

@@ -1,10 +1,10 @@
 /* global Newslist, SourceSelection */
-define(['Vue', 'text!views/about.html', 'vue_resource',
+define(['Vue', 'text!views/about.html', 'vue_axios', 'axios',
   'vue!vue-components/SourceSelection',
   'vue!vue-components/NewsList'
 ],
-		function (Vue, file, VueResource, sourceselection, newslist) {
-		  Vue.use(VueResource);
+		function (Vue, file, VueAxios, axios, sourceselection, newslist) {
+		  Vue.use(VueAxios, axios);
 		  return Vue.extend({
 			components: {
 			  sourceselection,
