@@ -86,6 +86,7 @@ be replaced with Vue in Oracle JET applications.
 
 ## References and Further Information
 
+   * [GitHub: Simple RequireJS App with Vue](https://github.com/GeertjanWielenga/RequireJSSamples/tree/master/RequireVue)
    * [YouTube: From Knockout to Vue in Oracle JET](https://www.youtube.com/watch?v=BMs9KoSGi7s)
    * [YouTube: Replacing Knockout Completely in Oracle JET](https://www.youtube.com/watch?v=54CqLy_t7KY)
    * [Retiring vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
