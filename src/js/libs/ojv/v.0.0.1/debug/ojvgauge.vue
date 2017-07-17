@@ -7,16 +7,17 @@
     function (Vue) {
       Vue.component('ojvgauge', {
           template: template,
-          props: {
-	    min: Number,
-	    max: Number,
-	    value: Number
+          props: ['min','max','initial'],
+          data() {
+              return {
+                value: this.initial
+              };
           },
           mounted() {
             $(this.$el).ojStatusMeterGauge({
                 min: this.min,
                 max: this.max,
-                value: this.value,
+                value: this.initial,
                 orientation: 'circular',
                 readOnly: false,
                 optionChange: (event, ui) => {
