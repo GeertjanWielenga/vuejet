@@ -5,7 +5,7 @@
         <span class="oj-flex-item">
 
             <h3>Chart</h3>
-            <ojvchart type="bar" orientation="vertical" :series="stats"/>
+            <ojvchart type="bar" orientation="vertical" v-bind:series="stats"/>
             <br/><br/><br/><br/>
 
             <h3>Raw Data</h3>
@@ -19,9 +19,9 @@
 
             <h3>Gauge</h3>
             <ojvgauge
-                :min=0
-                :max=100
-                :initial=value
+                v-bind:min=0
+                v-bind:max=100
+                v-bind:initial=value
                 @changed="setValue"
                 style="height:150px"/>
             <b>New value: {{value}}</b>
@@ -30,7 +30,7 @@
 
             <h3>Date Picker</h3>
             <ojvdatepicker
-                :initial="myDate"
+                v-bind:initial="myDate"
                 @changed="setDate">
             </ojvdatepicker>
             <b>Selected date: {{myDate}}</b>
@@ -40,8 +40,3 @@
     </span>
 
 </div>
-<!--https://www.sitepoint.com/fetching-data-third-party-api-vue-axios/
-https://vuejs.org/v2/examples/select2.html
-https://vuejs.org/v2/guide/components.html
-https://forum.vuejs.org/t/making-jquery-ui-datepicker-works-with-vuejs/2752/10
--->
