@@ -85,7 +85,7 @@ After cloning the repo, take the following steps in the order below.
 ### 7. Provide new solution for handling responsive design.
 
  **Status:** Done. Knockout-based utility classes for responsive design
- are replace by Enquire.js. See the
+ are replaced by Enquire.js. See the
  [Header1.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header1.vue) file.
 
 ### 8. Rewrite 'navdrawer' Oracle JET template to use Vue components.
