@@ -59,7 +59,10 @@ After cloning the repo, take the following steps in the order below.
 
 ### 4. Split combined constructs into HTML/JS files.
 
- **Status:** In progress. Done for Vue-based Oracle JET modules, not yet for Vue components.
+ **Status:** In progress. Done for Vue-based Oracle JET modules, not yet for Vue components. Also,
+ investigate creating a [Vue plugin](https://vuejs.org/v2/guide/plugins.html) that will automatically
+ load the two together, removing the requirement to load the HTML file into the JavaScript,
+ as is done by `ojModule` in standard Oracle JET applications.
  See the
  [dashboard.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/views/dashboard.html) and
  [dashboard.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/viewModels/dashboard.js) files.
