@@ -4,7 +4,7 @@
 
         <span class="oj-flex-item">
 
-            <h3>Chart</h3>
+            <h3>Bar Chart</h3>
             <ojvchart type="bar" orientation="vertical" v-bind:series="stats"/>
 
             <br/><br/><br/><br/>
@@ -13,6 +13,18 @@
             <ul>
                 <li v-for="stat in stats">{{ stat.name }} --- {{ stat.items }}</li>
             </ul>
+
+        </span>
+
+        <span class="oj-flex-item">
+
+            <h3>Pie Chart</h3>
+            <ojvchart type="pie" orientation="vertical" v-bind:series="stats"/>
+
+            <br/><br/><br/><br/>
+
+            <h3>Line Chart</h3>
+            <ojvchart type="line" orientation="vertical" v-bind:series="stats"/>
 
         </span>
 
@@ -35,6 +47,11 @@
                 @changed="setDate">
             </ojvdatepicker>
             <b>Selected date: {{myDate}}</b>
+
+            <br/><br/><br/><br/>
+
+            <h3>Funnel Chart</h3>
+            <ojvchart type="funnel" orientation="vertical" v-bind:series="stats"/>
 
         </span>
 
