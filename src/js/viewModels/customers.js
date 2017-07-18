@@ -1,4 +1,6 @@
-define(['Vue', 'text!views/customers.html', 'vue!libs/ojv/v.0.0.1/debug/ojvgrid'], 
+define(['Vue', 
+  'text!views/customers.html', 
+  'vue!libs/ojv/v.0.0.1/debug/ojvgrid'], 
  function(Vue, file) {
   return Vue.extend({
     template: file,
