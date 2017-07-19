@@ -39,20 +39,20 @@ After cloning the repo, take the following steps in the order below.
 
  ### 1. Register Vue via Require in an Oracle JET application.
 
- **Status:** Done ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done"). 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done")
  See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) and
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js) files.
 
 ### 2. Rewrite Oracle JET modules to use Vue instead of Knockout.
 
- **Status:** Done. See the 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") See the 
  [views](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/views) folder and the
  [viewModels](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/viewModels) folder.
 
 ### 3. Create and load Vue components in Oracle JET modules.
 
- **Status:** Done. See the 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") See the 
  [vue-components](https://github.com/GeertjanWielenga/vuejet/tree/master/src/js/vue-components) 
  folder, containing Vue components, loaded via 
  [require-vuejs](https://github.com/edgardleal/require-vuejs), as shown in
@@ -78,36 +78,36 @@ After cloning the repo, take the following steps in the order below.
 
 ### 6. Replace Oracle JET router with vue-router.
 
- **Status:** Done. See the 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json), 
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js), and 
  [Header2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header2.vue) files.
 
 ### 7. Provide new solution for handling responsive design.
 
- **Status:** Done. Knockout-based utility classes for responsive design
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") Knockout-based utility classes for responsive design
  are replaced by Enquire.js. See the
  [Header1.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Header1.vue) file.
 
 ### 8. Rewrite 'navdrawer' Oracle JET template to use Vue components.
 
- **Status:** Done. See the 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") See the 
  [index.html](https://github.com/GeertjanWielenga/vuejet/blob/master/src/index.html) and the
  [Layout2.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/Layout2.vue) files.
 
 ### 9. Include Vue libraries in build and serve Grunt tasks.
 
- **Status:** Done. See the
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") See the
  [oraclejet-build.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-build.js) and 
  [oraclejet-serve.js](https://github.com/GeertjanWielenga/vuejet/blob/master/scripts/grunt/config/oraclejet-serve.js) files.
 
 ### 10. Remove Knockout from the application.
 
- **Status:** Done. No more references to Knockout anywhere.
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") No more references to Knockout anywhere.
 
 ### 11. Integrate vue-resource and Axios for HTTP/REST/AJAX calls.
 
- **Status:** Done. After integrating [vue-resource](https://github.com/pagekit/vue-resource) successfully, it was removed 
+ **Status:** ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done") After integrating [vue-resource](https://github.com/pagekit/vue-resource) successfully, it was removed 
  because it has been [retired](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
  and replaced with [axios](https://github.com/mzabriskie/axios) 
  and [vue-axios](https://github.com/imcvampire/vue-axios). See the 
