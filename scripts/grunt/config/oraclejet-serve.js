@@ -37,6 +37,7 @@ module.exports = function () {
 		    'src/js/routes.js',
 		    'src/js/NavDataFactory.js',
 		    'src/js/main.js',
+		    'src/css/override.css',
 		    'src/index.html'],
          options: {
            livereload: true
