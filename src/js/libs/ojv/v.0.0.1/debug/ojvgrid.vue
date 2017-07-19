@@ -1,8 +1,8 @@
 <template>
-    <table>
+    <table id="t01">
         <thead>
             <tr>
-                <th v-for="key in columns"
+                <th id="th1" v-for="key in columns"
                     @click="sortBy(key)"
                     :class="{ active: sortKey == key }">
                     {{ key | capitalize }}
@@ -13,7 +13,7 @@
         </thead>
         <tbody>
             <tr v-for="entry in filteredData">
-                <td v-for="key in columns">
+                <td id="td1" v-for="key in columns">
                     {{entry[key]}}
                 </td>
             </tr>

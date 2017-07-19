@@ -21,13 +21,13 @@
     margin-right: 20px;
 }
 
-table {
+table#t01 {
   border: 2px solid #42b983;
   border-radius: 3px;
   background-color: #fff;
 }
 
-th {
+th#th1 {
   background-color: #42b983;
   color: rgba(255,255,255,0.66);
   cursor: pointer;
@@ -37,20 +37,20 @@ th {
   user-select: none;
 }
 
-td {
+td#td1 {
   background-color: #f9f9f9;
 }
 
-th, td {
+th#th1, td#td1 {
   min-width: 120px;
   padding: 10px 20px;
 }
 
-th.active {
+th#th1.active {
   color: #fff;
 }
 
-th.active .arrow {
+th#th1.active .arrow {
   opacity: 1;
 }
 
