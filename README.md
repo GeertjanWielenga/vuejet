@@ -39,7 +39,8 @@ After cloning the repo, take the following steps in the order below.
 
  ### 1. Register Vue via Require in an Oracle JET application.
 
- **Status:** Done [green.png]. See the 
+ **Status:** Done ![yes](https://github.com/GeertjanWielenga/vuejet/blob/master/green.png "Done"). 
+ See the 
  [package.json](https://github.com/GeertjanWielenga/vuejet/blob/master/package.json) and
  [main.js](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/main.js) files.
 
