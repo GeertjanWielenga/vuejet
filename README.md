@@ -115,6 +115,18 @@ After cloning the repo, take the following steps in the order below.
  files, which integrates usage of [axios](https://github.com/mzabriskie/axios), defined in
  [SourceSelection.vue](https://github.com/GeertjanWielenga/vuejet/blob/master/src/js/vue-components/SourceSelection.vue).
 
+### 12. Investigate whether/how CCA components can be integrated.
+
+ **Status:** In progress. Maybe Vue components are enough, though
+ it would be useful to be able to create CCA components that use Vue
+ instead of Knockout and figure out how to reuse them in CCA-supporting
+ products.
+
+### 13. Investigate usage of Webpack instead of Require.
+
+ **Status:** Not started. Maybe fork this project and then
+ work on migrating from Require to Webpack via the fork.
+
 ## References and Further Information
 
    * [GitHub: Simple RequireJS App with Vue](https://github.com/GeertjanWielenga/RequireJSSamples/tree/master/RequireVue)
