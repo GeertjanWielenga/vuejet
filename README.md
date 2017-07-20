@@ -128,6 +128,12 @@ After cloning the repo, take the following steps in the order below.
  **Status:** Not started. Maybe fork this project and then
  work on migrating from Require to Webpack via the fork.
 
+## Screenshots
+
+![pic2](https://github.com/GeertjanWielenga/vuejet/blob/master/pic2.png "pic2")
+![pic3](https://github.com/GeertjanWielenga/vuejet/blob/master/pic2.png "pic3")
+![pic4](https://github.com/GeertjanWielenga/vuejet/blob/master/pic2.png "pic4")
+
 ## References and Further Information
 
    * [GitHub: Simple RequireJS App with Vue](https://github.com/GeertjanWielenga/RequireJSSamples/tree/master/RequireVue)
