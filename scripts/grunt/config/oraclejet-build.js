@@ -69,6 +69,11 @@ module.exports = function (grunt) {
            cwd: 'node_modules/enquire.js',
            src: ['**'], 
            dest: 'web/js/libs/enquire.js'
+         },
+         {
+           cwd: 'node_modules/simpleweather',
+           src: ['**'], 
+           dest: 'web/js/libs/simpleweather'
          }
        ]
      },

@@ -14,7 +14,8 @@
     "vue-resource": "latest",
     "axios": "latest",
     "vue-axios": "latest",
-    "enquire.js": "2.1.6"
+    "enquire.js": "2.1.6",
+    "simpleweather": "latest"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
