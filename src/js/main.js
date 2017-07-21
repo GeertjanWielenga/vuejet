@@ -36,7 +36,8 @@ requirejs.config(
     'vue': 'libs/require-vuejs/dist/require-vuejs',
     'vue_router': 'libs/vue-router/dist/vue-router',
     'axios': 'libs/axios/dist/axios',
-    'vue_axios': 'libs/vue-axios/dist/vue-axios.es5'
+    'vue_axios': 'libs/vue-axios/dist/vue-axios.es5',
+	'simpleWeather': 'libs/simpleweather/jquery.simpleWeather.min'
   }
   //endinjector
   ,
