@@ -146,3 +146,4 @@ After cloning the repo, take the following steps in the order below.
    * [Retiring vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
    * [Vue.js 2 & Vue-Resource - Real-World Vue Application With External API Access](https://medium.com/codingthesmartway-com-blog/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access-c3de83f25c00)
    * [Fetching Data from a Third-Party API with Vue.js and Axios](https://www.sitepoint.com/fetching-data-third-party-api-vue-axios/)
+   * [SimpleWeather.js](http://simpleweatherjs.com/)
