@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>Currently: {{currently}}</h3>
+        <h3>{{currently}} {{temp}}</h3>
     </div>
 </template>
 
@@ -12,7 +12,8 @@
           props: ['source'],
           data() {
             return {
-               currently: ''
+               currently: '',
+               temp: ''
             };
           },
           created: function () {
@@ -27,6 +28,7 @@
                   unit: 'c',
                   success: function (weatherObject) {
                       self.currently = weatherObject.currently;
+                      self.temp = weatherObject.temp + '´' + weatherObject.units.temp;
 //                      console.log(weatherObject);
                   }
                 });
