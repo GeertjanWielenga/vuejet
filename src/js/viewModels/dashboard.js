@@ -1,17 +1,21 @@
 define(['Vue', 'text!views/dashboard.html',
-  'ojs/ojdatacollection-common',
-  'vue!libs/ojv/v.0.0.1/debug/ojvtree',
-  'vue!libs/ojv/v.0.0.1/debug/ojvsimpleweather'], function (Vue, file) {
+  'vue!vue-components/LocationSelection',
+  'vue!vue-components/WeatherReport',
+  'ojs/ojdatacollection-common'], function (Vue, file, locationselection, weatherreport) {
   return Vue.extend({
+	components: {
+	  locationselection,
+	  weatherreport
+	},
 	template: file,
 	data: function () {
 	  return {
-		myLocation: 'Tokyo, Japan'
+		source: ""
 	  };
 	},
 	methods: {
-	  setLocation(val) {
-		this.myLocation = val;
+	  sourceChanged: function (source) {
+		this.source = source;
 	  }
 	}
   });

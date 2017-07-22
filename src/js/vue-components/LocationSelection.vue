@@ -5,26 +5,23 @@
 <script>
       define(['Vue', 'text!data/cities.json', 'ojs/ojtree', 'ojs/ojdatacollection-common'],
         function (Vue, file) {
-          Vue.component('ojvtree', {
+          Vue.component('LocationSelection', {
                 template: template,
-                props: [
-                  'initialLocation'
-                ],
                 data() {
                   var items = JSON.parse(file);
                   return {
-                        location: this.initialLocation,
+                        source: '',
                         items: items
                   };
                 },
                 methods: {
-                  currentRowListener: function (event, ui) {
+                  sourceChanged: function (event, ui) {
                         if (ui.func === 'select') {
                           var city = this._arrayToCity(ui['item']);
                           var country = this._arrayToCountry(ui['item']);
                           if (country !== 'undefined') {
-                                this.location = city + ', ' + country;
-                                this.$emit('changed', this.location);
+                                this.source = city + ', ' + country;
+                                this.$emit('sourceChanged', this.source);
                           }
                         }
                   },
@@ -51,7 +48,7 @@
                 },
                 mounted() {
                   $('#location').ojTree({
-                        before: this.currentRowListener,
+                        before: this.sourceChanged,
                         data: new oj.JsonTreeDataSource(this.items)
                   });
                 }
