@@ -1,6 +1,15 @@
 <div class="oj-hybrid-padding">
-  <h3>Dashboard Content Area</h3>
-  <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
-  </div>
+    <h3>Dashboard Content Area</h3>
+    <div>
+        To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
+    </div>
+
+    <h3>Location Picker</h3>
+    <ojvtree
+        v-bind:initialCity="myLocation"
+        @changed="setLocation">
+    </ojvtree>
+    <b>Selected location: {{myLocation}}</b>
+
+    <ojvsimpleweather location="Beijing, China"/>
 </div>
