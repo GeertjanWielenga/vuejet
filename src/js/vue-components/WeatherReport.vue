@@ -1,5 +1,7 @@
 <template>
-    <p>Weather -- {{source}}</p>
+    <div>
+        <h3>Currently: {{currently}}</h3>
+    </div>
 </template>
 
 <script>
@@ -10,7 +12,7 @@
           props: ['source'],
           data() {
             return {
-                stats: []
+               currently: ''
             };
           },
           created: function () {
@@ -18,11 +20,13 @@
           },
           methods: {
             updateSource: function (source) {
+                var self = this;
                 $.simpleWeather({
-                  location: this.source,
+                  location: source,
                   woeid: '',
                   unit: 'c',
                   success: function (weatherObject) {
+                      self.currently = weatherObject.currently;
                       console.log(weatherObject);
                   }
                 });
