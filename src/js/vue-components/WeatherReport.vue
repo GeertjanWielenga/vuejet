@@ -27,7 +27,7 @@
                   unit: 'c',
                   success: function (weatherObject) {
                       self.currently = weatherObject.currently;
-                      console.log(weatherObject);
+//                      console.log(weatherObject);
                   }
                 });
             }
