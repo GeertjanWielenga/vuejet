@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{currently}} {{temp}}</h3>
+        <h3>Summary: {{currently}}</h3>
     </div>
 </template>
 

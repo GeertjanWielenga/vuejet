@@ -1,12 +1,13 @@
 <div class="oj-hybrid-padding">
-    <h3>Dashboard Content Area</h3>
-    <div>
-        To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
-    </div>
+    <WeatherReport v-bind:source="source"></WeatherReport>
+    <hr/>
     <br/><br/>
-    <div>
-        <p><LocationSelection v-on:sourceChanged="sourceChanged"></LocationSelection></p>
-        <hr/>
-        <p><WeatherReport v-bind:source="source"></WeatherReport></p>
+    <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-flex-direction-column">
+            <LocationSelection v-on:sourceChanged="sourceChanged"></LocationSelection>
+        </div>
+        <div class="oj-flex-item">
+            <WeatherForecast v-bind:source="source" ></WeatherForecast>
+        </div>
     </div>
 </div>
