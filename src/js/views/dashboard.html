@@ -11,7 +11,8 @@
         </div>
         <div class="oj-flex-item">
             <gmap-map style='width: 500px; height: 340px;'
-               v-bind:center='{lat: 1.38, lng: 103.8}'
+               v-bind:map-type-id='mapTypeId'
+               v-bind:center='center'
                v-bind:zoom='12'>
             </gmap-map>
         </div>
