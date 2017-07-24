@@ -3,11 +3,17 @@
     <hr/>
     <br/><br/>
     <div class="oj-flex">
-        <div class="oj-flex-item oj-sm-flex-direction-column">
+        <div class="oj-flex-item">
             <LocationSelection v-on:sourceChanged="sourceChanged"></LocationSelection>
         </div>
         <div class="oj-flex-item">
             <WeatherForecast v-bind:source="source" ></WeatherForecast>
+        </div>
+        <div class="oj-flex-item">
+            <gmap-map style="width: 500px; height: 340px;"
+               v-bind:center="{lat: 1.38, lng: 103.8}"
+               v-bind:zoom="12">
+            </gmap-map>
         </div>
     </div>
 </div>
