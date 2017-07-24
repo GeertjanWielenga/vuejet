@@ -74,6 +74,11 @@ module.exports = function (grunt) {
            cwd: 'node_modules/simpleweather',
            src: ['**'], 
            dest: 'web/js/libs/simpleweather'
+         },
+         {
+           cwd: 'node_modules/vue2-google-maps',
+           src: ['**'], 
+           dest: 'web/js/libs/vue2-google-maps'
          }
        ]
      },
