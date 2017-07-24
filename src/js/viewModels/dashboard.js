@@ -20,8 +20,9 @@ define(['Vue', 'text!views/dashboard.html',
 			template: file,
 			data: function () {
 			  return {
-				source: "",
-				mapTypeId: google.maps.MapTypeId.GEOMAP,
+				source: "Amsterdam, Netherlands",
+				mapTypeId1: google.maps.MapTypeId.ROADMAP,
+				mapTypeId2: google.maps.MapTypeId.SATELLITE,
 				center: {lat: 52.3702, lng: 4.8952}
 			  };
 			},

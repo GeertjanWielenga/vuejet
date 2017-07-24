@@ -3,18 +3,27 @@
     <hr/>
     <br/><br/>
     <div class="oj-flex">
-        <div class="oj-flex-item">
+        <div class="oj-flex-item oj-panel oj-panel-alt1">
             <LocationSelection v-on:sourceChanged="sourceChanged"></LocationSelection>
         </div>
-        <div class="oj-flex-item">
+        <div class="oj-flex-item oj-panel oj-panel-alt1">
             <WeatherForecast v-bind:source="source" ></WeatherForecast>
         </div>
-        <div class="oj-flex-item">
-            <gmap-map style='border:1px solid black; width: 500px; height: 340px;'
-               v-bind:map-type-id='mapTypeId'
-               v-bind:center='center'
-               v-bind:zoom='12'>
-            </gmap-map>
+        <div class="oj-flex oj-sm-flex-direction-column">
+            <div class="oj-flex-item oj-panel oj-panel-alt1">
+                <gmap-map style='border:1px solid black; width: 450px; height: 340px;'
+                          v-bind:map-type-id='mapTypeId1'
+                          v-bind:center='center'
+                          v-bind:zoom='12'>
+                </gmap-map>
+            </div>
+            <div class="oj-flex-item oj-panel oj-panel-alt1">
+                <gmap-map style='border:1px solid black; width: 450px; height: 340px;'
+                          v-bind:map-type-id='mapTypeId2'
+                          v-bind:center='center'
+                          v-bind:zoom='13'>
+                </gmap-map>
+            </div>
         </div>
     </div>
 </div>
