@@ -134,6 +134,7 @@ After cloning the repo, take the following steps in the order below.
 ![pic2](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-2.png "pic2")
 ![pic3](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-3.png "pic3")
 ![pic4](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-4.png "pic4")
+![pic5](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-5.png "pic5")
 
 ## References and Further Information
 
