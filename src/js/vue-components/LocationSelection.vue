@@ -1,7 +1,9 @@
 <template>
-    <select id="citySelect" class="form-control" v-on:change="sourceChanged">
+    <select id="citySelect" class="form-control"
+            v-on:change="sourceChanged">
         <option value="">Please select a capital city...</option>
-        <option v-for="item in items" v-bind:value="item.city+', '+item.country">{{item.country}}, {{item.city}}</option>
+        <option v-for="item in items"
+                v-bind:value="item.city+', '+item.country">{{item.country}}, {{item.city}}</option>
     </select>
 </template>
 
