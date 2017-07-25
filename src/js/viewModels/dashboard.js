@@ -28,7 +28,7 @@ define(['Vue', 'text!views/dashboard.html',
 			},
 			methods: {
 			  sourceChanged: function (source) {
-				this.source = source;
+				this.source = source.toString();
 				this.findLatLon();
 			  },
 			  findLatLon: function () {
