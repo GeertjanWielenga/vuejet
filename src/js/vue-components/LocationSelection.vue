@@ -1,9 +1,12 @@
 <template>
-    <div id="location"></div>
+    <select id="citySelect" class="form-control" v-on:change="sourceChanged">
+        <option value="">Please select a capital city...</option>
+        <option v-for="item in items" v-bind:value="item.city+', '+item.country">{{item.country}}, {{item.city}}</option>
+    </select>
 </template>
 
 <script>
-      define(['Vue', 'text!data/cities.json', 'ojs/ojtree', 'ojs/ojdatacollection-common'],
+      define(['Vue', 'text!libs/country-json/src/country-by-capital-city.json', 'ojs/ojselectcombobox'],
         function (Vue, file) {
           Vue.component('LocationSelection', {
                 template: template,
@@ -15,42 +18,17 @@
                   };
                 },
                 methods: {
-                  sourceChanged: function (event, ui) {
-                        if (ui.func === 'select') {
-                          var city = this._arrayToCity(ui['item']);
-                          var country = this._arrayToCountry(ui['item']);
-                          if (country !== 'undefined') {
-                                this.source = city + ', ' + country;
-                                this.$emit('sourceChanged', this.source);
-                          }
-                        }
-                  },
-                  _arrayToCity(arr) {
-                        var s = "";
-                        $.each(arr, function (i, val) {
-                          if (i) {
-                                s += ", ";
-                          }
-                          s += $(arr[i]).attr("id");
-                        });
-                        return s;
-                  },
-                  _arrayToCountry(arr) {
-                        var s = "";
-                        $.each(arr, function (i, val) {
-                          if (i) {
-                                s += ", ";
-                          }
-                          s += $(arr[i]).attr("country");
-                        });
-                        return s;
+                  sourceChanged: function(e) {
+                    alert('nothing happening here');
                   }
                 },
                 mounted() {
-                  $('#location').ojTree({
-                        before: this.sourceChanged,
-                        data: new oj.JsonTreeDataSource(this.items)
-                  });
+                    $('#citySelect').ojSelect({
+                        optionChange: (event, ui) => {
+                          this.$emit('sourceChanged', ui['value']);
+                          this.source = ui['value'];
+                        }
+                    });
                 }
           });
         });
