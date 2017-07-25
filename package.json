@@ -16,7 +16,8 @@
     "vue-axios": "latest",
     "vue2-google-maps": "latest",
     "enquire.js": "2.1.6",
-    "simpleweather": "latest"
+    "simpleweather": "latest",
+    "cities.json": "latest"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

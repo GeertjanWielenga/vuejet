@@ -79,6 +79,11 @@ module.exports = function (grunt) {
            cwd: 'node_modules/vue2-google-maps',
            src: ['**'], 
            dest: 'web/js/libs/vue2-google-maps'
+         },
+         {
+           cwd: 'node_modules/cities.json',
+           src: ['**'], 
+           dest: 'web/js/libs/cities.json'
          }
        ]
      },
