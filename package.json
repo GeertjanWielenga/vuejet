@@ -17,7 +17,7 @@
     "vue2-google-maps": "latest",
     "enquire.js": "2.1.6",
     "simpleweather": "latest",
-    "cities.json": "latest"
+    "country-json": "latest"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
