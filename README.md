@@ -130,6 +130,7 @@ After cloning the repo, take the following steps in the order below.
 
 ## Screenshots
 
+![pic1](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-1.png "pic1")
 ![pic2](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-2.png "pic2")
 ![pic3](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-3.png "pic3")
 ![pic4](https://github.com/GeertjanWielenga/vuejet/blob/master/pic-4.png "pic4")
@@ -149,3 +150,5 @@ After cloning the repo, take the following steps in the order below.
    * [Awesome Vue](https://github.com/vuejs/awesome-vue)
    * [Weather](http://simpleweatherjs.com/)
    * [Google Maps](https://www.npmjs.com/package/vue2-google-maps)
+   * [lodash](https://www.npmjs.com/package/lodash)
+   * [js-marker-clusterer](https://www.npmjs.com/package/js-marker-clusterer)
