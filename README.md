@@ -153,3 +153,4 @@ After cloning the repo, take the following steps in the order below.
    * [Google Maps](https://www.npmjs.com/package/vue2-google-maps)
    * [lodash](https://www.npmjs.com/package/lodash)
    * [js-marker-clusterer](https://www.npmjs.com/package/js-marker-clusterer)
+   * [cities.json](https://www.npmjs.com/package/cities.json)
