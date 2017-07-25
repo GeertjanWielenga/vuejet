@@ -3,22 +3,22 @@
     <hr/>
     <br/><br/>
     <div class="oj-flex">
-        <div class="oj-flex-item oj-panel oj-panel-alt1">
+        <div class="oj-flex-item oj-panel oj-panel-alt1 oj-margin">
             <LocationSelection v-on:sourceChanged="sourceChanged"></LocationSelection>
         </div>
-        <div class="oj-flex-item oj-panel oj-panel-alt1">
+        <div class="oj-flex-item oj-panel oj-panel-alt1 oj-margin">
             <WeatherForecast v-bind:source="source" ></WeatherForecast>
         </div>
         <div class="oj-flex oj-sm-flex-direction-column">
-            <div class="oj-flex-item oj-panel oj-panel-alt1">
-                <gmap-map style='border:1px solid black; width: 450px; height: 300px;'
+            <div class="oj-flex-item oj-panel oj-panel-alt1 oj-margin">
+                <gmap-map style='border:1px solid black; width: 610px; height: 300px;'
                           v-bind:map-type-id='mapTypeId1'
                           v-bind:center='center'
                           v-bind:zoom='12'>
                 </gmap-map>
             </div>
-            <div class="oj-flex-item oj-panel oj-panel-alt1">
-                <gmap-map style='border:1px solid black; width: 450px; height: 300px;'
+            <div class="oj-flex-item oj-panel oj-panel-alt1 oj-margin">
+                <gmap-map style='border:1px solid black; width: 610px; height: 300px;'
                           v-bind:map-type-id='mapTypeId2'
                           v-bind:center='center'
                           v-bind:zoom='13'>
