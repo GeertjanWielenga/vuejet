@@ -14,8 +14,9 @@ of Knockout:
 
 ## Purpose 
 
-Investigate whether and to what extend Knockout can
-be replaced with Vue in Oracle JET applications.
+Investigate whether and to what extent Knockout can
+be replaced with Vue in Oracle JET applications. This is not the direction
+that the Oracle JET team is going in, but is my experimental proof of concept below.
 
 ## Set Up
 
